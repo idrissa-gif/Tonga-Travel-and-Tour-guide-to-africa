@@ -78,7 +78,10 @@
                 <a href="#"><i class="fab fa-twitter"></i> twitter</a>
                 <a href="#"><i class="fab fa-instagram"></i> instagram</a>
             </div>
+        </div>
 
+        <div class="credit">
+                created by <span>Idrissa & Nabil</span> | All right reversed!
         </div>
     </section>
     <!-- footer session end -->

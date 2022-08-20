@@ -119,6 +119,18 @@ section{
 .footer .box-container .box a:hover i{
     padding-right: 1rem;
 }
+
+.footer .credit
+{
+    color: white;
+    border-top: .1rem solid var(--light-white);
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+.footer .credit span{
+    color:var(--main-color);
+}
 /* -----------------------------------------------------------------end of the footer -------------------------------------------------------------- */
 
 
