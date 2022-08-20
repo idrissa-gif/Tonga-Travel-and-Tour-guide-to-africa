@@ -82,17 +82,25 @@ section{
 }
 
 
+/* ----------------------------------------------------------start of footer----------------------------------------------------------- */
 
+.footer{
+    background: url(/images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+.footer .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(10rem , 1fr));
+    gap: 3rem;
+}
 
-
-
-
-
-
-
-
-
+.footer .box-container .box h3{
+    color: var(--white);
+}
 
 /*-----------------------------------------media queries ---------------------------------*/
 
@@ -101,6 +109,7 @@ section{
         padding: 3rem 5%; 
     }
 }
+
 @media (max-width:991px){
     html{
         font-size:55%;
@@ -111,7 +120,16 @@ section{
 }
 
 @media (max-width:768px){
-    .header.navbar
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-time
+    {
+        transform: rotate(180deg);
+        transition: .2s linear;
+    }
+    .header .navbar
     {
         position: absolute;
         top:99%;
@@ -120,12 +138,18 @@ section{
         background-color: var(--white);
         border-top: var(--border);
         padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
-    .header.navbar a{
+    .header .navbar.active
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a{
         display: block;
         margin: 2rem;
         text-align: center;
     }
+   
 }
 
 @media (max-width:450px){
