@@ -16,42 +16,65 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- header section start -->
-    <section class="header">
-        <a href="home.php" class="logo">TONGA</a>
-        <nav class="navbar">
-            <a href="home.php">Home</a>
-            <a href="package.php"></a>
-            <li>
-            <a href="book.php"></a>
-            <div class="dropdown_menu">
-                
-                <ul>
-                    <li>South Africa</li>
-                    <li>Rwanda</li>
-                    <li>Egypt</li>
-                    <li>Cameroon</li>
-                    <li>Mali</li>
-                    <li>Mauritius</li>
-                    <li>Tanzania</li>
-                    <li>Uganda</li>
-                </ul>
-            </div>
-
+    
+        <!-- header section start -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.php">TONGA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.php">Home</a>
             </li>
-            
-            <a href="book.php">Book</a>
-            <a href="book.php">Services</a>
-            <a href="about.php">About</a>
-        </nav>
-        <div id="menu-btn" class="fa fa-bars">
 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Activities
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hiking</a></li>
+                <li><a class="dropdown-item" href="#">Tour</a></li>
+                <li><a class="dropdown-item" href="#">Scuba diving</a></li>
+                <li><a class="dropdown-item" href="#">Camping</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Destinations
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">South Africa</a></li>
+                <li><a class="dropdown-item" href="#">Rwanda</a></li>
+                <li><a class="dropdown-item" href="#">Egypt</a></li>
+                <li><a class="dropdown-item" href="#">Cameroon</a></li>
+                <li><a class="dropdown-item" href="#">Mali</a></li>
+                <li><a class="dropdown-item" href="#">Mauritius</a></li>
+                <li><a class="dropdown-item" href="#">Tanzania</a></li>
+                <li><a class="dropdown-item" href="#">Uganda</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="book.php">Book</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="book.php">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="book.php">Contact us</a>
+            </li>
+
+          </ul>
         </div>
-  
-</div>
-    </section>
-
-    <!-- header section end -->
+      </div>
+    </nav>
+        <!-- header section end -->
 
 
 
@@ -111,6 +134,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- custom js file js -->
     <script src="js/script.js"></script>
+    <!-- script for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
 </body>
 </html>
