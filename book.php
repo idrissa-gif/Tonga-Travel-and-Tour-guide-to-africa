@@ -18,9 +18,11 @@
         <a href="home.php" class="logo">TONGA</a>
         <nav class="navbar">
             <a href="home.php">Home</a>
-            <a href="about.php">About</a>
-            <a href="package.php">Package</a>
+            <a href="package.php">Activities</a>
+            <a href="book.php">Destinations</a>
             <a href="book.php">Book</a>
+            <a href="book.php">Services</a>
+            <a href="about.php">About</a>
         </nav>
         <div id="menu-btn" class="fa fa-bars">
 
