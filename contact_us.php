@@ -1,24 +1,3 @@
-<?php
-$messagecheck = false;
-if(isset($_POST['email']))
-{
-
-    $userName = $_POST['name'];
-    $subject = $_POST['subject'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    
-    $to = "idrissa@iut-dhaka.edu";
-    $body = "";
-    $body .= "From: ".$userName."\r\n";
-    $body .= "Email: ".$email."\r\n";
-    $body .= "Message: ".$message."\r\n"; 
-    
-    mail($to,$subject,$body);
-    $messagecheck =  true;
-    
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,6 +14,7 @@ if(isset($_POST['email']))
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <!-- header section start -->
@@ -113,32 +93,17 @@ if(isset($_POST['email']))
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="emailId" 
+          <input type="email" class="form-control" id="email" 
           name = "email" tabindex = "3" placeholder="name@example.com" required>
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" colums="4" 
+          <textarea class="form-control" id="message" rows="10" colums="4" 
           name="message" tabindex = "4" placeholder="Write your message" required></textarea>
         </div>
         <div class = "div-btn">
-            <button type="submit" class="btn btn-primary" >Send Message!</button>
+            <button type="submit" class="btn btn-primary" id = "btn" >Send Message!</button>
         </div>
-        <?php
-        if($messagecheck):
-        ?>
-        <div class = "check" >
-            <h3>The message is successfully send!</h3>
-        </div>
-        <?php
-        else:
-        ?>
-        <div class="check">
-            <h3>The message failed!</h3>
-        </div>
-        <?php
-        endif;
-        ?>
     </form>
     <!-- body section end  -->
 
@@ -196,9 +161,33 @@ if(isset($_POST['email']))
     <!-- footer session end -->
 
 
+    <script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click',function (e){
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var subject = document.getElementById('subject').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var body = 'name: '+name +'<br/> email: ' + email + '<br/> subject ' + subject + '<br/> message '+ message;
 
-
-
+    Email.send({
+      Host : "smtp.gmail.com",
+      SecureToken : "868C1CF83650F7CC0298841D5AE45B33376F",
+      Username : "tongaagency@gmail.com",
+      Password : "trqqalfoykhtkbzd",
+      To : 'tongaagency@gmail.com',
+      From : email,
+      Subject : subject,
+      Body : body
+    }).then(
+      message => alert("successfully sent")
+    );
+    
+})
+    </script>
+    <!-- script smtpJs.com -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- swiper js link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- custom js file js -->

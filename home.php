@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+    
 </head>
 <body>
   
@@ -65,12 +68,43 @@
             <a class="nav-link active" aria-current="page" href="contact_us.php">Contact us</a>
           </li>
         </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+        <ul class="nav">
+          <li class="nav-item"><a href="login.php" class="nav-link link-dark px-2">Login</a></li>
+          <li class="nav-item"><a href="sigin_up.php" class="nav-link link-dark px-2">Sign up</a></li>
+        </ul>
       </div>
     </div>
   </nav>
   <!-- header section end -->
 
+  <!-- body conatain -->
+  <div class="container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="/images/home-slide-1.png"></div>
+        <div class="swiper-slide"><img src="/images/home-slide-2.png"></div>
+        <div class="swiper-slide"><img src="/images/home-slide-3.png"></div>
 
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+
+
+  <!-- end of body contain -->
   
   <!-- footer session start  -->
   <section class="footer">
@@ -110,6 +144,32 @@
   <script src="js/script.js"></script>
   <!-- script for bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+      autoplay:{
+        delay: 3000,
+        disableOnInteration: false,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable:true,
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+      // And if we need scrollbar
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+    });
+  </script>
     
 </body>
 </html>

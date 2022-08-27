@@ -66,7 +66,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="book.php">Contact us</a>
+              <a class="nav-link active" aria-current="page" href="contact_us.php">Contact us</a>
             </li>
 
           </ul>
