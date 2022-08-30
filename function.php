@@ -1,5 +1,5 @@
 <?php
-function chech_login($con)
+function check_login($con)
 {
     if(isset($_SESSION['user_id']))
     {
@@ -17,4 +17,20 @@ function chech_login($con)
 
     header("Location: login.php");
     die;
+}
+
+
+function randon_num($length)
+{
+    $text = "";
+    if($length < 5)
+    {
+        $length = 5;
+    }
+    $len = rand(4,$length);
+    for($i=0 ; $i < $len ; $i++)
+    {
+        $text .= rand(0,9);
+    }
+    return $text;
 }
