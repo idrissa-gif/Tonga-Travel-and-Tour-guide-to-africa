@@ -1,5 +1,5 @@
 <?php
-$dbhost = "localhost";
+$dbhost = "127.0.0.1";
 $dbuser = "root";
 $dbpass ="";
 $dbname = "Tonga_travel_db";
@@ -13,7 +13,7 @@ $mysqli = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 /* Set the desired charset after establishing a connection */
 $mysqli->set_charset('utf8mb4');
 
-printf("Success... %s\n", $mysqli->host_info);
+// printf("Success... %s\n", $mysqli->host_info);
 
 // Check connection
 if ($mysqli -> connect_errno) {
