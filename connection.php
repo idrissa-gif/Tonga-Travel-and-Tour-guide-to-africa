@@ -1,5 +1,4 @@
 <?php
-
 $dbhost = "127.0.0.1";
 $dbuser = "root";
 $dbpass ="";
@@ -11,7 +10,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 // $mysqli = new mysqli('localhost', 'my_user', 'my_password', 'my_db');
 $mysqli = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 
-$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+//$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 
 /* Set the desired charset after establishing a connection */
 $mysqli->set_charset('utf8mb4');

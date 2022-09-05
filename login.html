@@ -1,43 +1,12 @@
 
-<?php
-include("connection.php");
-include("function.php");
-if(array_key_exists('r_submit',$_GET))
-{
-  if($_SERVER['REQUEST_METHOD']=='POST')
-  {
-    $user_name = $_GET['r_name']+' '+$_GET['r_username'];
-    $email = $_GET['r_email'];
-    $password = $_GET['r_password'];
-    $conform_password = $_GET['r_conform_password'];
-  
-    if(!empty($user_name)&&!empty($password))
-    {
 
-      $user_id = randon_num(100);
-      $query = "insert into users (user_id , user_name,email,password) values($user_id,$user_name,$email,$password)";
-      mysqli_query($con,$query);
-
-      header("Location: about.php");
-      die;
-
-    }
-    else {
-      echo "please entre some valid data";
-    }
-  }
-}else if(array_key_exists('submit',$_GET))
-{
-  echo "hello";
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>Login/Registion</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -54,9 +23,13 @@ if(array_key_exists('r_submit',$_GET))
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- customize  -->
     <link rel="stylesheet" href="css/sign_up.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
+  
     <!-- Start your project here-->
     <div class="login-signup">
           <!-- Pills navs -->
@@ -75,7 +48,7 @@ if(array_key_exists('r_submit',$_GET))
     <!-- Pills content -->
     <div class="tab-content">
       <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-        <form method="POST">
+        <form method="POST" action="sign.php" id="login">
           <div class="text-center mb-3">
             <p>Sign in with:</p>
             <button type="button" class="btn btn-link btn-floating mx-1">
@@ -136,7 +109,7 @@ if(array_key_exists('r_submit',$_GET))
       </div>
 
       <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-        <form method="POST">
+        <form method="POST" action="sign.php" id="register" name="register" enctype="application/x-www-form-urlencoded">
           <div class="text-center mb-3">
             <p>Sign up with:</p>
             <button type="button" class="btn btn-link btn-floating mx-1">
@@ -204,14 +177,12 @@ if(array_key_exists('r_submit',$_GET))
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-3" name="r_submit">Sign in</button>
+          <button type="submit" class="btn btn-primary btn-block mb-3" name="r_submit" id="r_submit">Sign in</button>
         </form>
       </div>
     </div>
     <!-- Pills content -->
     <!-- End your project here-->
-    </div>
-  </form>
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->

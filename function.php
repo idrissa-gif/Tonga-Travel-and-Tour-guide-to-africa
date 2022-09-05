@@ -34,3 +34,5 @@ function randon_num($length)
     }
     return $text;
 }
+
+?>
