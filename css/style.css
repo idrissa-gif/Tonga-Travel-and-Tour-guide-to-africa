@@ -80,12 +80,18 @@ section{
     color:var(--black);
     display: none;
 }
-
+.navbar .navbar-expand-lg .bg-light
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
 
 /* ----------------------------------------------------------start of footer----------------------------------------------------------- */
 
 .footer{
-    background: url(/images/footer-bg.jpg) no-repeat;
+    background: url(./images/footer-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -125,7 +131,6 @@ section{
     color: white;
     border-top: .1rem solid var(--light-white);
     text-align: center;
-    padding-top: 3rem;
     margin-top: 3rem;
 }
 .footer .credit span{

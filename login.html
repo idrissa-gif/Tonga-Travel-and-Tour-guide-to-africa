@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Login/Registion</title>
+    <title>Login</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -20,16 +20,41 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
     <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="./css/mdb.min.css" />
     <!-- customize  -->
-    <link rel="stylesheet" href="css/sign_up.css">
+    <link rel="stylesheet" href="./css/sign_up.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
 <body>
-  
+    <!-- header section start -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./home.html">TONGA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="destinations.html">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="book.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- header section end -->
     <!-- Start your project here-->
     <div class="login-signup">
           <!-- Pills navs -->
@@ -39,8 +64,7 @@
           aria-controls="pills-login" aria-selected="true">Login</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
-          aria-controls="pills-register" aria-selected="false">Register</a>
+        <a class="nav-link" id="tab-register" href="register.html" >Register</a>
       </li>
     </ul>
     <!-- Pills navs -->
@@ -108,78 +132,6 @@
         </form>
       </div>
 
-      <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-        <form method="POST" action="sign.php" id="register" name="register" enctype="application/x-www-form-urlencoded">
-          <div class="text-center mb-3">
-            <p>Sign up with:</p>
-            <button type="button" class="btn btn-link btn-floating mx-1">
-              <i class="fab fa-facebook-f"></i>
-            </button>
-
-            <button type="button" class="btn btn-link btn-floating mx-1">
-              <i class="fab fa-google"></i>
-            </button>
-
-            <button type="button" class="btn btn-link btn-floating mx-1">
-              <i class="fab fa-twitter"></i>
-            </button>
-
-            <button type="button" class="btn btn-link btn-floating mx-1">
-              <i class="fab fa-github"></i>
-            </button>
-          </div>
-
-          <p class="text-center">or:</p>
-
-          <!-- Name input -->
-          <div class="form-outline mb-4">
-            <input type="text" id="registerName" class="form-control" name="r_name"/>
-            <label class="form-label" for="registerName">Name</label>
-          </div>
-
-          <!-- Username input -->
-          <div class="form-outline mb-4">
-            <input type="text" id="registerUsername" class="form-control" name="r_username"/>
-            <label class="form-label" for="registerUsername">Username</label>
-          </div>
-
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input type="email" id="registerEmail" class="form-control" name="r_email" required/>
-            <label class="form-label" for="registerEmail">Email</label>
-          </div> 
-          
-          <!-- Phone input -->
-          <div class="form-outline mb-4">
-            <input type="number" id="registerPhone" class="form-control" name="r_phone" />
-            <label class="form-label" for="registerEmail">Phone number</label>
-          </div>
-
-          <!-- Password input -->
-          <div class="form-outline mb-4">
-            <input type="password" id="registerPassword" class="form-control" name="r_password" required/>
-            <label class="form-label" for="registerPassword">Password</label>
-          </div>
-
-          <!-- Repeat Password input -->
-          <div class="form-outline mb-4">
-            <input type="password" id="registerRepeatPassword" class="form-control" name = "r_conform_password" />
-            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-          </div>
-
-          <!-- Checkbox -->
-          <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
-              aria-describedby="registerCheckHelpText" />
-            <label class="form  -check-label" for="registerCheck">
-              I have read and agree to the terms
-            </label>
-          </div>
-
-          <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-3" name="r_submit" id="r_submit">Sign in</button>
-        </form>
-      </div>
     </div>
     <!-- Pills content -->
     <!-- End your project here-->
