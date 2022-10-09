@@ -1,35 +1,106 @@
-.container
-{
-    width: 100%;
-    background: #222;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#Menubar {
+  width: 100%;
+  background: #FCD19C;
 }
 
-.swiper {
-    width: 100%;
-    height: auto;
-  }
-
-  .swiper-slide img{
-    width: 100%;
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  margin-bottom: 5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
+
+
+.swiper-slide{
+  position:relative 
+}
+
+.swiper-slide img { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.swiper-slide figcaption {
+  position:absolute; 
+  bottom:0; 
+  left:0
+}
+
+
+
 
 .form-control-dark {
-    border-color: var(--bs-gray);
-  }
-  .form-control-dark:focus {
-    border-color: #fff;
-    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-  }
-  
-  .text-small {
-    font-size: 85%;
-  }
-  
-  .dropdown-toggle {
-    outline: 0;
-  }
-  
+  border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+
+.featured-Places-Head {
+  position: sticky;
+  background: #87CEEB;
+}
+
+.FeaturedPlaces {
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.Places {
+  width: 500px;
+  display: inline;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #FFC0CB;
+  margin: 5px;
+}
+
+.Places h2 {
+  color: black;
+  font-size: 25px;
+  letter-spacing: 1px;
+  border-radius: 12px;
+  padding: 0px;
+}
+
+.Places img{
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.Places a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 12px 30px;
+  background-color: black;
+}
+
+.Places a:hover {
+  background-color: #87CEEB;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}

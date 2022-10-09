@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- bootstrap css link -->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- swiper css link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/home.css"> 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- bootstrap css link -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- swiper css link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+  <style>
     
+  </style>
+
 </head>
+
 <body>
-  
+
   <!-- header section start -->
-  <nav class="navbar navbar-expand-lg bg-light" style="position: -webkit-sticky; position: sticky; top: 0;padding: 5px; z-index: 2;">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-light"
+    style="position: -webkit-sticky; position: sticky; width: 100%; top: 0; padding: 0px; z-index: 2;">
+    <div id="Menubar" class="container-fluid">
       <a class="navbar-brand" href="./home.html">TONGA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,14 +63,14 @@
   <!-- header section end -->
 
   <!-- body conatain -->
-  <div class="container" style="z-index: -2;">
+  <div class="container-fluid" style="z-index: -2;">
     <div class="swiper" style="z-index: 0;">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper" style="z-index: -3;">
         <!-- Slides -->
-        <div class="swiper-slide"><img src="./images/home-slide-1.png" ></div>
-        <div class="swiper-slide"><img src="./images/home-slide-2.png" ></div>
-        <div class="swiper-slide"><img src="./images/home-slide-3.png" ></div>
+        <div class="swiper-slide"><img src="./images/home-slide-1.jpg"></div>
+        <div class="swiper-slide"><img src="./images/home-slide-2.jpg"></div>
+        <div class="swiper-slide"><img src="./images/home-slide-3.jpg"></div>
 
       </div>
       <!-- If we need pagination -->
@@ -77,39 +85,145 @@
     </div>
   </div>
 
+  <div class="featured-Places-Head">
+    <h3>
+      <center><b>Featured Places</b></center>
+    </h3>
+  </div>
+
+
+  <div class="FeaturedPlaces">
+
+    <div class="Places">
+      <h2>Kruger Park</h2>
+      <img src="./images/SA/c1e193b7ebed2d3725e2c13507b99bc82aefd7d1-1600x1065.jpg">
+      <p>Where nearly 2 million hectares of unrivaled diversity of life forms fuses with historical and
+        archaeological sights - this is real Africa.
+        The world-renowned Kruger National Park offers a wildlife experience that ranks with the best in Africa.
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+
+    <div class="Places">
+      <h2>Sina Village</h2>
+      <img src="./images/Uganda/view-over-the-sina-village.jpg">
+      <p>The Social Innovation Museum in Uganda is a unique experience 
+        where you will see social innovations happening, meet our social innovators and create ideas yourself.
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+
+    <div class="Places">
+      <h2>Giza Necrophile</h2>
+      <img src="./images/egypt/egypt-cairo-pyramids-of-giza.jpg">
+      <p>The last surviving wonder of the Seven Wonders of the Ancient World, 
+        the Pyramids of Giza are the most prime tourist attractions in Egypt. 
+        On the outer edge of this magnificent sprawl lies one of the wonders of the ancient world. 
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+
+
+    <div class="Places">
+      <h2>Prison Island</h2>
+      <img src="./images/Tanzania/nukapada-3.jpg">
+      <p>Located just off the coast of Unguja, Prison Island is a hidden oasis which has a fascinating history. 
+        Famous for its population of Aldabra giant tortoises and the ruins of a former prison and hospital, 
+        Prison Island is a captivating day trip which compliments a wider Zanzibari itinerary . 
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+
+  </div>
+
+  <div class="FeaturedPlaces">
+
+    <div class="Places">
+      <h2>Kruger Park</h2>
+      <img src="./images/SA/c1e193b7ebed2d3725e2c13507b99bc82aefd7d1-1600x1065.jpg">
+      <p>Where nearly 2 million hectares of unrivaled diversity of life forms fuses with historical and
+        archaeological sights - this is real Africa.
+        The world-renowned Kruger National Park offers a wildlife experience that ranks with the best in Africa.
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+
+    <div class="Places">
+      <h2>Sina Village</h2>
+      <img src="./images/Uganda/view-over-the-sina-village.jpg">
+      <p>The Social Innovation Museum in Uganda is a unique experience 
+        where you will see social innovations happening, meet our social innovators and create ideas yourself.
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+
+    <div class="Places">
+      <h2>Giza Necrophile</h2>
+      <img src="./images/egypt/egypt-cairo-pyramids-of-giza.jpg">
+      <p>The last surviving wonder of the Seven Wonders of the Ancient World, 
+        the Pyramids of Giza are the most prime tourist attractions in Egypt. 
+        On the outer edge of this magnificent sprawl lies one of the wonders of the ancient world. 
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+
+
+    <div class="Places">
+      <h2>Prison Island</h2>
+      <img src="./images/Tanzania/nukapada-3.jpg">
+      <p>Located just off the coast of Unguja, Prison Island is a hidden oasis which has a fascinating history. 
+        Famous for its population of Aldabra giant tortoises and the ruins of a former prison and hospital, 
+        Prison Island is a captivating day trip which compliments a wider Zanzibari itinerary . 
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+
+  </div>
+
+
+
+  </section>
 
   <!-- end of body contain -->
-  
+
   <!-- footer session start  -->
   <section class="footer" style="background: url(./images/footer-bg.jpg) no-repeat;">
-      <div class="box-container">
-          
-          <div class="box">
-              <h3>Extra links</h3>
-              <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
-              <a href="#"><i class="fas fa-angle-right"></i> About us</a>
-              <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
-              <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
-          </div>
-          <div class="box">
-              <h3>contact info</h3>
-              <a href="#"><i class="fas fa-phone"></i> +880 1612618109</a>
-              <a href="#"><i class="fas fa-envelope"></i> Idrissa@iut-dhaka.edu</a>
-              <a href="#"><i class="fas fa-envelope"></i> shalayuy@iut-dhaka.edu</a>
-              <a href="#"><i class="fas fa-map"></i> Dhaka, Bangladesh</a>
-          </div>
-          <div class="box"> 
-              <h3>Follow us</h3>
-              <a href="#"><i class="fab fa-facebook"></i> facebook</a>
-              <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
-              <a href="#"><i class="fab fa-twitter"></i> twitter</a>
-              <a href="#"><i class="fab fa-instagram"></i> instagram</a>
-          </div>
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Extra links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+        <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
       </div>
-      <div class="credit">
-              created by <span>Idrissa & Nabil</span> | All right reversed!
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +880 1612618109</a>
+        <a href="#"><i class="fas fa-envelope"></i> Idrissa@iut-dhaka.edu</a>
+        <a href="#"><i class="fas fa-envelope"></i> shalayuy@iut-dhaka.edu</a>
+        <a href="#"><i class="fas fa-map"></i> Dhaka, Bangladesh</a>
       </div>
-      
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+        <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+      </div>
+    </div>
+    <div class="credit">
+      created by <span>Idrissa & Nabil</span> | All right reversed!
+    </div>
+
   </section>
   <!-- footer session end -->
   <!-- swiper js link -->
@@ -117,35 +231,38 @@
   <!-- custom js file js -->
   <script src="./js/script.js"></script>
   <!-- script for bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
   <script>
     const swiper = new Swiper('.swiper', {
       // Optional parameters
       loop: true,
-      autoplay:{
+      autoplay: {
         delay: 3000,
         disableOnInteration: false,
       },
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
-        clickable:true,
+        clickable: true,
       },
-    
+
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    
+
       // And if we need scrollbar
       // scrollbar: {
       //   el: '.swiper-scrollbar',
       // },
     });
   </script>
-    
+
 </body>
+
 </html>
 
 
@@ -153,7 +270,7 @@
 
 
 
-          <!-- </li>
+<!-- </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Destinations
