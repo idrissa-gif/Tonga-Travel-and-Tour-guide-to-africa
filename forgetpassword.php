@@ -1,66 +1,87 @@
 <?php
+
 session_start();
 include("connection.php");
 include("function.php");
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-function check_email()
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+function send_password_reset($get_name,$get_email,$token)
 {
-    if(array_key_exists('submit',$_POST))
+
+    //Create an instance; passing `true` enables exceptions
+  $mail = new PHPMailer(true);
+  
+  try {
+      //Server settings
+      //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+      $mail->isSMTP();                                            //Send using SMTP
+      $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+      $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+      $mail->Username   = 'tongaagency@gmail.com';                     //SMTP username
+      $mail->Password   = '';                               //SMTP password
+      //$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+      $mail->SMTPSecure = 'tls';
+      $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+  
+      //Recipients
+      $mail->setFrom('tongoagency@gmail.com',$get_name);
+      $mail->addAddress($get_email);
+  
+      //Attachments
+      //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+      //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+  
+      //Content
+      $mail->isHTML(true);                                  //Set email format to HTML
+      $mail->Subject = 'Reset Password Notification';
+      $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+      $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+  
+      $mail->send();
+      echo 'Message has been sent';
+  } catch (Exception $e) {
+      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  }
+}
+if(array_key_exists('submit',$_POST))
+{
+  echo "<script> alert('No Email found') </script>";
+  $email = mysqli_real_escape_string($con,$_POST['email']);
+  $token = md5(rand());
+  $query =  "SELECT * from user where email = '$email' LIMIT 1";
+  $chek_email = mysqli_query($con,$query);
+  
+  if(mysqli_num_rows($chek_email)>0)
+  {
+    $row = mysqli_fetch_row($chek_email);
+    $get_name = $row['user_name'];
+    $get_email = $row['email'];
+    $updated_token_query = "UPDATE users SET verify_token = '$token' WHERE email = '$get_email' LIMIT 1";
+    $updated_token = mysqli_query($con , $updated_token_query);
+    if($updated_token)
     {
-        $email = $_POST["email"];
-        if(!empty($email))
-        {
-            $dbhost = "127.0.0.1";
-            $dbuser = "root";
-            $dbpass ="";
-            $dbname = "Tonga_travel_db";
-            
-            /* You should enable error reporting for mysqli before attempting to make a connection */
-            mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-            
-            $con = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
-
-            $check = mysqli_query($con,"SELECT * FROM users WHERE email = '$email'");
-            if(mysqli_num_rows($check) > 0)
-            {
-                echo "1";
-            }
-        }
+      send_password_reset($get_name,$get_name,$token);
+      $_SESSION['status'] = "We emailed you a password reset link";
+      header("Location: reset_password.html");
+      exit(0);
+      
     }
+  }
+  else 
+  {
+    
+    $_SESSION['status'] = "No Email found";
+    header("location : reset_password.html");
+    exit(0);
+  }
 
-    echo "0";
 }
 
-
 ?>
-
-<script>
-    var result = <?php check_email() ?>;
-
-    var btn = document.getElementById('submit');
-    btn.addEventListener('click',function (e){
-    e.preventDefault();
-    var name = document.getElementById('name').value;
-    var body = 'name: '+name +'<br/> email: ' + email + '<br/> subject ' + subject + '<br/> message '+ message;
-    if(name != "" && email != "" && message != "" && body != "")
-    {
-        Email.send({
-        Host : "smtp.gmail.com",
-        SecureToken : "868C1CF83650F7CC0298841D5AE45B33376F",
-        Username : "tongaagency@gmail.com",
-        Password : "trqqalfoykhtkbzd",
-        To : 'tongaagency@gmail.com',
-        From : email,
-        Subject : subject,
-        Body : body
-      }).then(
-        message => alert("successfully sent")
-      );
-    }else 
-    {
-      message=>alert("One of the required field is empty!");
-    }
-    
-    
-    })
-</script>
