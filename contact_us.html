@@ -15,13 +15,25 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/style.css">
     <style>
-      .footer
-      {
-          background: url(./images/footer-bg.jpg) no-repeat;
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
+      .body-footer{
+        background: url(./images/Contact_backgroundimg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
       }
+
+
+      .container-fluid
+      {
+        background-color: #FCD19C;
+      }
+      .navbar{
+        position: -webkit-sticky; 
+        position: sticky; 
+        top: 0;
+        padding: 5px; 
+        z-index: 2;
+      }
+      
     </style>
 </head>
 <body>
@@ -58,90 +70,93 @@
       </div>
     </nav>
     <!-- header section end -->
-    
-    <!-- body section start -->
-    <div class="heading" style="background: url(./images/header-bg-2.png);">Contact us</div>
-    <form action = "#" class="form" method="POST" >
-        
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="name" 
-          name = "name" tabindex = "1" required>
-        </div>
-        <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" class="form-control" 
-            name="subject"  tabindex = "2" id="subject" placeholder="subject">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" 
-          name = "email" tabindex = "3" placeholder="name@example.com" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="10" colums="4" 
-          name="message" tabindex = "4" placeholder="Write your message" required></textarea>
-        </div>
-        <div class = "div-btn">
-            <button type="submit" class="btn btn-primary" id = "btn" >Send Message!</button>
-        </div>
-    </form>
-    <!-- body section end  -->
 
+    <div class="body-footer">
+      <!-- body section start -->
+      <div class="heading" >Contact us</div>
+      <form action = "#" class="form" method="POST" >
+          
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="name" 
+            name = "name" tabindex = "1" required>
+          </div>
+          <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" 
+              name="subject"  tabindex = "2" id="subject" placeholder="subject">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" 
+            name = "email" tabindex = "3" placeholder="name@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="10" colums="4" 
+            name="message" tabindex = "4" placeholder="Write your message" required></textarea>
+          </div>
+          <div class = "div-btn">
+              <button type="submit" class="btn btn-primary" id = "btn" >Send Message!</button>
+          </div>
+      </form>
+      <!-- body section end  -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <!-- footer session start  -->
+      <section class="footer"  >
+          <div class="box-container">
+              
+              <div class="box">
+                  <h3>Quick links</h3>
+                  <a href="home.html" style="color: white;"><i class="fas fa-angle-right"></i> Home</a>
+                  <a href="about.hmtl" style="color: white;"><i class="fas fa-angle-right"></i> About</a>
+                  <a href="destinations.html" style="color: white;"><i class="fas fa-angle-right"></i> Package</a>
+                  <a href="book.html" style="color: white;"><i class="fas fa-angle-right"></i> Book</a>
+              </div>
+  
+              <div class="box">
+                  <h3>Extra links</h3>
+                  <a href="#"style="color: white;"><i class="fas fa-angle-right"></i> Ask Questions</a>
+                  <a href="#"style="color: white;"><i class="fas fa-angle-right"></i> About us</a>
+                  <a href="#"style="color: white;"><i class="fas fa-angle-right"></i> privacy policy</a>
+                  <a href="#"style="color: white;"><i class="fas fa-angle-right"></i> terms of use</a>
+              </div>
+  
+              <div class="box">
+                  <h3>contact info</h3>
+                  <a href="#"style="color: white;"><i class="fas fa-phone"></i> +880 1612618109</a>
+                  <a href="#"style="color: white;"><i class="fas fa-envelope"></i> Idrissa@iut-dhaka.edu</a>
+                  <a href="#"style="color: white;"><i class="fas fa-envelope"></i> shalayuy@iut-dhaka.edu</a>
+                  <a href="#"style="color: white;"><i class="fas fa-map"></i> Dhaka, Bangladesh</a>
+              </div>
+  
+              <div class="box"> 
+                  <h3>Follow us</h3>
+                  <a href="#"style="color: white;"><i class="fab fa-facebook"></i> facebook</a>
+                  <a href="#"style="color: white;"><i class="fab fa-linkedin"></i> linkedin</a>
+                  <a href="#"style="color: white;"><i class="fab fa-twitter"></i> twitter</a>
+                  <a href="#"style="color: white;"><i class="fab fa-instagram"></i> instagram</a>
+              </div>
+          </div>
+  
+          <div class="credit">
+              created by <span>Idrissa & Nabil</span> | All right reversed!
+          </div>
+          
+      </section>
+      <!-- footer session end -->
+  
 
-
-
-
-
-
-
-
-
-    <!-- footer session start  -->
-    <section class="footer">
-        <div class="box-container">
-            
-            <div class="box">
-                <h3>Quick links</h3>
-                <a href="home.html"><i class="fas fa-angle-right"></i> Home</a>
-                <a href="about.hmtl"><i class="fas fa-angle-right"></i> About</a>
-                <a href="destinations.html"><i class="fas fa-angle-right"></i> Package</a>
-                <a href="book.html"><i class="fas fa-angle-right"></i> Book</a>
-            </div>
-
-            <div class="box">
-                <h3>Extra links</h3>
-                <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
-                <a href="#"><i class="fas fa-angle-right"></i> About us</a>
-                <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
-                <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
-            </div>
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#"><i class="fas fa-phone"></i> +880 1612618109</a>
-                <a href="#"><i class="fas fa-envelope"></i> Idrissa@iut-dhaka.edu</a>
-                <a href="#"><i class="fas fa-envelope"></i> shalayuy@iut-dhaka.edu</a>
-                <a href="#"><i class="fas fa-map"></i> Dhaka, Bangladesh</a>
-            </div>
-
-            <div class="box"> 
-                <h3>Follow us</h3>
-                <a href="#"><i class="fab fa-facebook"></i> facebook</a>
-                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
-                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
-                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
-            </div>
-        </div>
-
-        <div class="credit">
-            created by <span>Idrissa & Nabil</span> | All right reversed!
-        </div>
-        
-    </section>
-    <!-- footer session end -->
-
+    </div>
 
     <script>
     var btn = document.getElementById('btn');
@@ -152,19 +167,25 @@
     var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
     var body = 'name: '+name +'<br/> email: ' + email + '<br/> subject ' + subject + '<br/> message '+ message;
-
-    Email.send({
-      Host : "smtp.gmail.com",
-      SecureToken : "868C1CF83650F7CC0298841D5AE45B33376F",
-      Username : "tongaagency@gmail.com",
-      Password : "trqqalfoykhtkbzd",
-      To : 'tongaagency@gmail.com',
-      From : email,
-      Subject : subject,
-      Body : body
-    }).then(
-      message => alert("successfully sent")
-    );
+    if(name != "" && email != "" && message != "" && body != "")
+    {
+        Email.send({
+        Host : "smtp.gmail.com",
+        SecureToken : "868C1CF83650F7CC0298841D5AE45B33376F",
+        Username : "tongaagency@gmail.com",
+        Password : "trqqalfoykhtkbzd",
+        To : 'tongaagency@gmail.com',
+        From : email,
+        Subject : subject,
+        Body : body
+      }).then(
+        message => alert("successfully sent")
+      );
+    }else 
+    {
+      message=>alert("One of the required field is empty!");
+    }
+    
     
 })
     </script>
