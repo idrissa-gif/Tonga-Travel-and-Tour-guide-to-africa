@@ -52,10 +52,9 @@ function send_password_reset($get_name,$get_email,$token)
 }
 if(array_key_exists('submit',$_POST))
 {
-  echo "<script> alert('No Email found') </script>";
-  $email = mysqli_real_escape_string($con,$_POST['email']);
+  $email = $_POST['email'];
   $token = md5(rand());
-  $query =  "SELECT * from user where email = '$email' LIMIT 1";
+  $query =  "SELECT * from users where email = '$email' LIMIT 1";
   $chek_email = mysqli_query($con,$query);
   
   if(mysqli_num_rows($chek_email)>0)
@@ -64,7 +63,9 @@ if(array_key_exists('submit',$_POST))
     $get_name = $row['user_name'];
     $get_email = $row['email'];
     $updated_token_query = "UPDATE users SET verify_token = '$token' WHERE email = '$get_email' LIMIT 1";
+    echo "<script> alert($email);</script>";
     $updated_token = mysqli_query($con , $updated_token_query);
+    echo "<script> alert('Hello2');</script>";
     if($updated_token)
     {
       send_password_reset($get_name,$get_name,$token);
@@ -76,12 +77,9 @@ if(array_key_exists('submit',$_POST))
   }
   else 
   {
-    
-    $_SESSION['status'] = "No Email found";
-    header("location : reset_password.html");
-    exit(0);
+    echo "<script> alert('Passwords does not Match')
+    window.location.replace('forgetPassword.html'); </script>";
   }
-
 }
 
 ?>
