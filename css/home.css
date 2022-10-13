@@ -1,22 +1,59 @@
+
+.HomeBody{
+  max-width:100%;
+  max-height:100%;
+  position: relative;
+  overflow: auto;
+} 
+
 #Menubar {
   width: 100%;
+  height: auto;
   background: #FCD19C;
 }
 
 .container-fluid {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 500px;
   padding: 0%;
   margin-bottom: 5px;
-  display:flex;
+  display:inline-flex;
   align-items: center;
   justify-content: center;
   background-color: black;
+  overflow: hidden;
+ 
+}
+
+.container-fluid h3{
+
+position: absolute;
+color: #fff;
+bottom: 400px;
+font-size: 60px;
+align-items: center;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.container-fluid p{
+
+position: absolute;
+color: #fff;
+bottom: 150px;
+text-align: center;
+font-size: 30px;
+align-items: center;
+
+}
+
+.container-fluid img{
+  filter:brightness(40%);
 }
 
 
 .swiper-slide{
-  position:relative 
+  position:relative;
 }
 
 .swiper-slide img { 
@@ -59,28 +96,38 @@
 }
 
 .FeaturedPlaces {
-
+  position: relative;
   width: 100%;
-  display: flex;
+  height: 550px;
+  display: inline-flex;
   justify-content: space-around;
 
 }
 
 .Places {
+  position: relative;
+  height: auto;
   width: 500px;
   display: inline;
   text-align: center;
   border-radius: 12px;
   background-color: #FFC0CB;
   margin: 5px;
+  overflow: auto;
 }
 
-.Places h2 {
+.Places p {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Places h5 {
   color: black;
   font-size: 25px;
   letter-spacing: 1px;
   border-radius: 12px;
   padding: 0px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .Places img{
@@ -90,13 +137,17 @@
 }
 
 .Places a {
+  
   text-decoration: none;
+  position: absolute;
   color: #ffff;
   font-weight: bold;
   font-size: 18px;
-  border-radius: 12px;
-  padding: 12px 30px;
+  border-radius: 20px;
+  padding: 10px 20px;
   background-color: black;
+  bottom: 2%;
+  right:35%;
 }
 
 .Places a:hover {
