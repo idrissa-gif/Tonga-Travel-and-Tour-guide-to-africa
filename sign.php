@@ -22,7 +22,8 @@ if(array_key_exists('r_submit',$_POST))
       {
         if($password == $conform_password)
         {
-          $query ="INSERT INTO users(user_name , email , phone , password) VALUES('$user_name','$email','$phone','$password')";
+          $token = md5(rand());
+          $query ="INSERT INTO users(user_name , email , phone , password,verified_token) VALUES('$user_name','$email','$phone','$password','$token')";
           mysqli_query($con,$query);
           echo "<script> 
           alert('Registration Successfully')
