@@ -172,15 +172,20 @@
         Email.send({
         Host : "smtp.gmail.com",
         SecureToken : "868C1CF83650F7CC0298841D5AE45B33376F",
-        Username : "tongaagency@gmail.com",
-        Password : "trqqalfoykhtkbzd",
-        To : 'tongaagency@gmail.com',
+        Username : "tongavoyages@gmail.com",
+        Password : "jagKi7-jitdew-sazjug",
+        To : 'tongavoyages@gmail.com',
         From : email,
         Subject : subject,
         Body : body
       }).then(
-        message => alert("successfully sent")
+        message => 
+        {
+          alert("successfully sent")
+          setTimeout(() => {location.reload();}, 3000);
+        }
       );
+      
     }else 
     {
       message=>alert("One of the required field is empty!");

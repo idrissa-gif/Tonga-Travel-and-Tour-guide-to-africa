@@ -23,14 +23,14 @@ function send_password_reset($get_name,$get_email,$token)
       $mail->isSMTP();                                            //Send using SMTP
       $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
       $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-      $mail->Username   = 'tongaagency@gmail.com';                     //SMTP username
-      $mail->Password   = 'trqqalfoykhtkbzd';                               //SMTP password
+      $mail->Username   = 'tongavoyages@gmail.com';                     //SMTP username
+      $mail->Password   = 'jagKi7-jitdew-sazjug';                               //SMTP password
       //$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
       $mail->SMTPSecure = 'tls';
       $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
   
       //Recipients
-      $mail->setFrom('tongoagency@gmail.com','Tonga Travel Agency');
+      $mail->setFrom('tongavoyages@gmail.com','Tonga Travel Agency');
       $mail->addAddress($get_email);
   
       //Attachments
@@ -49,10 +49,12 @@ function send_password_reset($get_name,$get_email,$token)
     
   
       $mail->send();
-      echo "<script> alert('Message has been sent')</script>";
+      echo "<script> alert('We emailed you a password reset link')
+      window.location.replace('forgetPassword.html'); </script>";
   } catch (Exception $e) {
       echo "<script> alert('Message has not been sent {$mail->ErrorInfo}')</script>";
       echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+      echo "<script> window.location.replace('forgetPassword.html'); </script>";
   }
 }
 if(array_key_exists('submit',$_POST))
@@ -72,8 +74,6 @@ if(array_key_exists('submit',$_POST))
     if($updated_token)
     {
       send_password_reset($get_name,$get_email,$token);
-      echo "<script> alert('We emailed you a password reset link')
-      window.location.replace('forgetPassword.html'); </script>";
       exit(0);
       
     }

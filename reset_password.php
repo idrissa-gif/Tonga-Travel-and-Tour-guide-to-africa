@@ -84,7 +84,7 @@
       <!--Password must contain one lowercase letter, one number, and be at least 7 characters long.-->
       
       <div class="card-text">
-        <form action="resetpassword.php">
+        <form action="./resetpassword.php" method="POST">
           
           <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <strong>Holy guacamole!</strong> You should check in on some of those fields below.
@@ -92,16 +92,22 @@
               <span aria-hidden="true">&times;</span>
             </a>
           </div>
-
+          <div class="form-group">
+            <input type="hidden" name="updated_token" value="<?php if(isset($_GET['token'])) {echo $_GET['token'];} ?>">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email Address</label>
+            <input type="email" class="form-control form-control-sm" name = "email" value = "<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>" required>
+          </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Your new password</label>
-            <input type="password" class="form-control form-control-sm">
+            <input type="password" class="form-control form-control-sm" name="new_password" required>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Repeat password</label>
-            <input type="password" class="form-control form-control-sm">
+            <input type="password" class="form-control form-control-sm" name="conform_new_password" required>
           </div>
-          <button type="submit" class="btn btn-primary btn-block submit-btn">Confirm</button>
+          <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit" name="submit">Confirm</button>
         </form>
       </div>
     </div>
