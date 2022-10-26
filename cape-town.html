@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Home</title>
+  <!-- bootstrap css link -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- swiper css link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/cape-town.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+  <style>
+    #Menubar {
+      width: 100%;
+      background: #FCD19C;
+    }
+
+    .container-fluid {
+      width: 100%;
+      height: 100%;
+      padding: 0%;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+    }
+
+
+    .swiper-slide {
+      position: relative
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-size: cover;
+    }
+
+    .swiper-slide figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0
+    }
+
+
+
+
+    .form-control-dark {
+      border-color: var(--bs-gray);
+    }
+
+    .form-control-dark:focus {
+      border-color: #fff;
+      box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+    }
+
+    .text-small {
+      font-size: 85%;
+    }
+
+    .dropdown-toggle {
+      outline: 0;
+    }
+
+
+    .featured-Places-Head {
+      position: sticky;
+      background: #87CEEB;
+    }
+
+    .FeaturedPlaces {
+
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .Places {
+      width: 500px;
+      display: inline;
+      text-align: center;
+      border-radius: 12px;
+      background-color: #FFC0CB;
+      margin: 5px;
+    }
+
+    .Places h2 {
+      color: black;
+      font-size: 25px;
+      letter-spacing: 1px;
+      border-radius: 12px;
+      padding: 0px;
+    }
+
+    .Places img {
+      width: 100%;
+      height: 300px;
+      border-radius: 12px;
+    }
+
+    .Places a {
+      text-decoration: none;
+      color: #ffff;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 12px;
+      padding: 12px 30px;
+      background-color: black;
+    }
+
+    .Places a:hover {
+      background-color: #87CEEB;
+      letter-spacing: 3px;
+      transition: 0.5s;
+    }
+  </style>
+
+</head>
+
+<body class="HomeBody">
+
+  <!-- header section start -->
+  <nav class="navbar navbar-expand-lg bg-light"
+    style="position: -webkit-sticky; position: sticky; width: 100%; top: 0; padding: 0px; z-index: 2;">
+    <div id="Menubar" class="container-fluid">
+      <a class="navbar-brand" href="./home.html">TONGA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="destinations.html">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="book.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+        <ul class="nav">
+          <li class="nav-item"><a href="./login.html" class="nav-link link-dark px-2">Login</a></li>
+          <li class="nav-item"><a href="./register.html" class="nav-link link-dark px-2">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- header section end -->
+
+  <section id="s1">
+
+    <div class="Banner">
+      <img src="./images/452972.jpg">
+    </div>
+    <div class="visit">
+      <h3>Visit Cape Town</h3>
+    </div>
+    <br>
+    <br>
+    <br>
+  </section>
+
+  <br>
+  <p class="intro">Cape Town is the best place in Africa and the World to visit according to
+    The New York Times and The Daily Telegraph in 2014 Cape Town is the second
+    most populous city in South Africa after Johannesburg and also the legislative capital of South Africa.
+  </p>
+
+<section>
+  <div id="about">
+
+    <h5>About Cape Town</h5>
+
+    <p class="description">Cape Town is the legislative capital city of South Africa. Cape Town is on South Africa's
+      southwestern coast close to the Cape of Good Hope, and is the southernmost city on the African continent. It is
+      the gateway to the globally renowned Cape Winelands which includes the towns of Franschhoek, Stellenbosch and
+      Paarl.
+    </p>
+    <p class="description">Cape Town is nicknamed the Mother City within South Africa. Compared to the more business
+      oriented Johannesburg it is known for its relaxed and leisurely atmosphere. Some jokingly claim that the reason it
+      is called the Mother City is that it takes at least 9 months to get anything done in Cape Town! Compared to other
+      parts of South Africa Cape Town is also distinctly more "western", and South Africans from other provinces
+      sometimes jokingly say they are traveling to Europe when visiting Cape Town.
+    </p>
+
+  </div>
+
+  <div id="about">
+
+    <h5>Geography</h5>
+    <p class="description">Cape Town is located at latitude 33.55° S (approx. the same as Sydney and Buenos Aires and
+      equivalent to Casablanca and Los Angeles in the northern hemisphere) and longitude 18.25° E. Table Mountain, with
+      its near vertical cliffs and flat-topped summit over 1,000 m (3,300 ft) high, and with Devil's Peak and Lion's
+      Head on either side, together form a dramatic mountainous backdrop enclosing the central area of Cape Town, the
+      so-called City Bowl. The metropolis of Cape Town is spread over a wide area, from Somerset West and Durbanville in
+      the east to Atlantis in the north and Cape Point in the south. The city centre is situated in a fairly small area
+      between Table Bay and Table Mountain
+    </p>
+
+  </div>  
+
+  <div id="about">
+
+    <h5>Climate</h5>
+    <p class="description">Cape Town has a warm Mediterranean climate (Köppen "Csb"), with mild, moderately wet winters
+      and dry, warm summers. Winter, which lasts from the beginning of June to the end of August, may see large cold
+      fronts entering for limited periods from the Atlantic Ocean with significant precipitation and strong
+      north-westerly winds. Winter months in the city average a maximum of 18 °C (64 °F) and minimum of 8.5 °C (47 °F)
+      Total annual rainfall in the city averages 515 millimetres (20.3 in) although in the southern suburbs, close to
+      the mountains, rainfall is significantly higher and averages closer to 1000 millimetres (40 in). Summer, which
+      lasts from December to March, is warm and dry with an average maximum of 26 °C (79 °F) and minimum of 16 °C (61
+      °F). The region can get uncomfortably hot when the Berg Wind, meaning "mountain wind", blows from the Karoo
+      interior for a couple of weeks in February or March. Spring and summer generally feature a strong wind from the
+      south-east, known locally as the south-easter or the Cape Doctor, so called because it blows air pollution away.
+      This wind is caused by a high-pressure system which sits in the South Atlantic to the west of Cape Town, known as
+      the South Atlantic High. Cape Town receives 3,100 hours of sunshine per year</p>
+
+  </div>
+
+  <div id="about">
+
+    <h5>History</h5>
+    <p class="description">Before the European colonial era what is now the Western Cape was inhabited by Khoikhoi and
+      San groups, whom the Dutch called "Hottentots", "Strandlopers" and "Bushmen" (terms that are now considered racist
+      and offensive). From the late 15th century, European ships (primarily Portuguese) started to visit the area,
+      firstly for fresh food and water, then later for whaling and trading with the locals. Cape Town's colonial history
+      started in 1652, when founder Jan van Riebeeck established a trading post there for the Dutch East Indies Company
+      (VOC), as a stopping point on the Cape Route. Even though South Africa is the part of Africa located furthest from
+      Europe, it was the first, and up until the 19th century only place which was substantially colonized by Europeans.
+      The reason is that the Cape, while being furthest from Europe, also is relatively far from the equator.
+    </p>
+    <img src="./images/SA/cape town-strand_western_cape_and_golf_club.jpg">
+
+  </div>
+
+  <br>
+
+  <div id="about">
+
+    <h5>Getting in</h5>
+    <p class="description">
+    <ol>
+      <li>By Plane; Cape Town International Airport > This is South Africa's second biggest airport (O.R. Tambo
+        International Airport in Johannesburg being the biggest) and the third busiest in Africa. About 20 km east of
+        the city centre, it is easily accessible via all national roads and is situated directly at the N2 near
+        Bellville.</li>
+      <br>
+      <li>By Train; All scheduled South African passenger trains are run by PRASA (the Passenger Rail Agency of South
+        Africa), which has different divisions for long distance (intercity) trains and commuter (suburban) trains.
+        Shosholoza Meyl operates intercity trains and MetroRail operates commuter trains in major cities. </li>
+      <br>
+      <li>By Car; Most roads in Cape Town and its surroundings are in excellent condition, which makes getting around in
+        a car a straightforward task. However, there is a risk of getting carjacked when it is dark or while you stop at
+        the traffic lights. It is not quite as dangerous as the media will make you believe, but you should take care.
+        Ask the staff in your hotel or anyone who knows the city well about the safe and unsafe areas of Cape Town.</li>
+      <br>
+      <li>By Bus; Every major bus company has intercity connections from Cape Town, taking you to other areas in South
+        Africa and to Namibia, Botswana and Zimbabwe. Every day up to six buses run to particular cities.</li>
+      <br>
+      <li>By Boat</li>
+
+    </ol>
+    </p>
+  </div>
+
+
+  <br>
+  <div id="about">
+
+    <h5>Getting Around</h5>
+    <p class="description">
+    <ol>
+      <li>By Foot; Cape Town is not the most pedestrian-friendly city in the world. There are areas that are ideal for
+        walking, such as the St George's Mall and Greenmarket Square areas in the city centre, the V&A Waterfront or
+        some beach areas. Care needs to be taken when walking in other parts of the city, as the roads can be busy, and
+        having pedestrian right of way does not necessarily mean that vehicles will cede to you. Pedestrians normally
+        cross when the road is clear, regardless of red pedestrian lights.</li>
+      <br>
+      <li>By Bicycle; It is possible to get around by bicycle. There are some bike lanes in the center. </li>
+      <br>
+      <li>By Car; Many car hire companies are based in the airport as well being found all over town. Note that South
+        Africa is a left-hand traffic country. Visitors from countries where traffic moves on the right-hand side may
+        need to take some time to get familiar with the different road rules. Getting a car with automatic transmission
+        at some rental services is not always easy so try to reserve a car in advance if you prefer an automatic.</li>
+      <br>
+      <li>By Metered Taxi; Metered taxis are controlled by the city council and can be considered safe and reliable. The
+        price per kilometer is around R8-R10 and can often be read at the taxis side door. You can also set a fixed
+        price with the driver, especially when going to a far away destination such as the airport which is about 21 km
+        from city center and the fare can be bargained down to R180.</li>
+      <br>
+      <li>By Ride Hailing Services; Ride hailing services are widely available across Cape Town, in particular Uber and
+        Bolt.
+      </li>
+      <br>
+      <li>By Minibus Taxi; Minibus taxis are used widely by locals but tourists are usually discouraged from using them,
+        except for the Green Point - Sea Point - Clifton - Camps Bay route that is frequently used by tourists. They
+        cover most of the Cape Town Metropolitan Area and are very cheap, Some minibus taxi operators have noticed the
+        upsurge in the tourist market and are starting to provide safe and legal alternatives to the traditional minibus
+        taxis. They are more expensive than traditional minibus taxis, but still far cheaper than metered taxis.
+      </li>
+      <br>
+      <li>By Train; Cape Town has a commuter rail system called Metrorail, though it is the locals that primarily use
+        it. They have put in a lot of work to improve comfort and safety on the trains though it doesn't match up with
+        the best in the world. As such, it is advisable to go on first-class. Cape Town's main station is located in the
+        city centre on the corner of Strand and Adderley Street. The suburban network of lines is fairly good with over
+        120 stations. You can go on a picturesque ride to Simon's Town along the Cape Peninsula's east coast.
+      </li>
+    </ol>
+    </p>
+    <div class="row">
+
+      <div class="col">
+        <img src="./images/SA/cape town international airport.jpg">
+      </div>
+
+      <div class="col">
+        <img src="./images/SA/cape town-n2 highway.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+  <br>
+  <div id="about">
+
+    <h5>Attractions (What to See)</h5>
+    <p class="description">
+    <p>Almost everything is possible in Cape Town, from a nice guided city tour through shark cage-diving. The easiest
+      way to get an overview on things to do, nice restaurants, clubs, tours etc. is to walk into one of the visitors
+      centres which are in several areas (V&A Waterfront, City Bowl, Green Point, etc.)
+    </p>
+    <ol>
+      <li>By Foot; Cape Town is not the most pedestrian-friendly city in the world. There are areas that are ideal for
+        walking, such as the St George's Mall and Greenmarket Square areas in the city centre, the V&A Waterfront or
+        some beach areas. Care needs to be taken when walking in other parts of the city, as the roads can be busy, and
+        having pedestrian right of way does not necessarily mean that vehicles will cede to you. Pedestrians normally
+        cross when the road is clear, regardless of red pedestrian lights.Cable Car to the top of Table Mountain; The
+        cable car and the pathways on top of the mountain are wheelchair accessible. A separate lift entrance and
+        friendly staff will help accessibility visitors. Weather conditions at the top of the mountain are not the same
+        as at the bottom so always take something warm to wear when going up the mountain, even if it is a nice toasty
+        30˚C at the bottom of the mountain. Wear sunblock and carry a water bottle (there is also a free drinking
+        fountain at the top near the cable station). There is a cafe with a limited range of snacks, coffee, beer and
+        wine at the top. Table Mountain is the home of a small animal, the rock rabbit (known locally as the 'Dassie')
+        whose closest relative, DNA-wise, is the elephant, and you can see them running around on the rocks at the top
+        of the mountain.</li>
+      <br>
+      <li>Climbing Table Mountain; Platteklip Gorge is the most accessible and therefore the most popular route for
+        climbing up Table Mountain. You start from Tafelberg Road and proceed up a steep gully to the top of Table
+        Mountain. It's a steep two hours but well worth the effort and you can jump in the cable car back down to spare
+        your knees. The cable car does not operate in strong winds so you need to check before departing. Remember to
+        take water, sunblock, a hat and jacket. Climbing the mountain in the heat is a grueling task.
+      </li>
+      <br>
+      <li>Cape Peninsula; Go to the Cape of Good Hope via Simon's Town and the African penguin colony at Boulders. Visit
+        Cape Point in the Table Mountain National Park, maybe have lunch there before taking a hike in a quieter part of
+        the reserve to immerse yourself in the essence of the landscape.
+      </li>
+      <br>
+      <li>Swimming; Beaches on the False Bay side of the peninsula are the most popular with swimmers as the water is
+        warmer. St James has the most picturesque tidal pool on the stretch between Muizenberg and Kalk Bay, while
+        Clovelly and Fish Hoek beaches wrap around a sheltered bay with soft, white sands. Fishing boats, hobie cats and
+        kayaks launch from here too. Brave hearts can sun-worship and swim naked in the freezing water of the isolated
+        and breathtaking nudist beach Sandy Bay near Llandudno.
+      </li>
+      <br>
+      <li>Surfing; Cape Town is one of the best places to surf. Muizenberg is a good place for beginners to learn to
+        surf, Gary offers reasonably priced lessons from a shop facing the beach.
+
+      </li>
+      <br>
+      <li>Sunset cruise. On visiting Cape Town take the opportunity for a sunset cruise from one of the services lined
+        up along the V&A dockside. Well worth seeing the sunset but also the view back towards the town and Table
+        Mountain from the sea
+
+      </li>
+      <br>
+
+      <li>Winelands. Tour the beautiful Constantia Valley wine estates Groot Constantia, Buitenverwagting, Klein
+        Constantia and Constantia Uitsig before checking out the Cape Winelands around Stellenbosch, Paarl and
+        Franschhoek. Stellenbosch has the added attraction of being an historical university town and Franschhoek, well
+        established as the food capital of the Cape, is home to three of the country's top ten restaurants. The views
+        are extraordinary.
+      </li>
+      <br>
+      <li>Winelands. Tour the beautiful Constantia Valley wine estates Groot Constantia, Buitenverwagting, Klein
+        Constantia and Constantia Uitsig before checking out the Cape Winelands around Stellenbosch, Paarl and
+        Franschhoek. Stellenbosch has the added attraction of being an historical university town and Franschhoek, well
+        established as the food capital of the Cape, is home to three of the country's top ten restaurants. The views
+        are extraordinary.
+      </li><br>
+      <li>Safari (Wildlife and City Tours)
+      </li><br>
+      <li>Kayaking</li>
+
+    </ol>
+    </p>
+    <div class="row">
+
+      <div class="col">
+        <img src="./images/SA/cape town-cape_malay_bo-kaap_city_street.jpg">
+      </div>
+
+      <div class="col">
+        <img src="./images/SA/cape town-houses_of_parliament_of_south africa.jpg">
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+        <img src="./images/SA/cape town-cape town_city_hall.jpg">
+      </div>
+
+      <div class="col">
+        <img src="./images/SA/cape town-clifton_beach.jpg">
+      </div>
+
+    </div>
+
+
+    <div id="about">
+      <br>
+      <h5>Where to Stay (Accommodation)</h5>
+      <p class="description">Accommodation in Cape Town ranges from hostels (of which there are many) to luxury
+        accommodation. Actually, there are so many hotels, B&Bs and guest houses that it can be difficult to decide
+        where to stay! Staying in the city centre often works out cheaper as all the attractions are nearby, but stick
+        to one of the neighbourhoods next to the central area for better prices and a quieter night's sleep. The area
+        around vibey Kloof Street in Gardens/Tamboerskloof with its young cafe culture and hip shopping is a good
+        choice. You could consider sleeping in one of the suburbs. It is normally quieter and there is less traffic than
+        in Central Cape Town. The suburbs in the south, like Muizenberg, Fish Hoek or Simon's Town, or near the
+        winelands (see Cape Winelands) are ones to try.
+      </p>
+      <img src="./images/SA/cape town-victoria - alfred waterfront.jpg">
+
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- end of body contain -->
+
+  <!-- footer session start  -->
+  <section class="footer" style="background: url(./images/footer-bg.jpg) no-repeat;">
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Extra links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+        <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +880 1612618109</a>
+        <a href="#"><i class="fas fa-envelope"></i> Idrissa@iut-dhaka.edu</a>
+        <a href="#"><i class="fas fa-envelope"></i> shalayuy@iut-dhaka.edu</a>
+        <a href="#"><i class="fas fa-map"></i> Dhaka, Bangladesh</a>
+      </div>
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+        <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+      </div>
+    </div>
+    <div class="credit">
+      created by <span>Idrissa & Nabil</span> | All right reversed!
+    </div>
+
+  </section>
+  <!-- footer session end -->
+  <!-- swiper js link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- custom js file js -->
+  <script src="./js/script.js"></script>
+  <!-- script for bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteration: false,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+    });
+  </script>
+
+</body>
+
+</html>

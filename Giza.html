@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Home</title>
+  <!-- bootstrap css link -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- swiper css link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/giza.css">
+  <link rel="stylesheet" href="./css/giza.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+  <style>
+    #Menubar {
+      width: 100%;
+      background: #FCD19C;
+    }
+
+    .container-fluid {
+      width: 100%;
+      height: 100%;
+      padding: 0%;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+    }
+
+
+    .swiper-slide {
+      position: relative
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-size: cover;
+    }
+
+    .swiper-slide figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0
+    }
+
+
+
+
+    .form-control-dark {
+      border-color: var(--bs-gray);
+    }
+
+    .form-control-dark:focus {
+      border-color: #fff;
+      box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+    }
+
+    .text-small {
+      font-size: 85%;
+    }
+
+    .dropdown-toggle {
+      outline: 0;
+    }
+
+
+    .featured-Places-Head {
+      position: sticky;
+      background: #87CEEB;
+    }
+
+    .FeaturedPlaces {
+
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .Places {
+      width: 500px;
+      display: inline;
+      text-align: center;
+      border-radius: 12px;
+      background-color: #FFC0CB;
+      margin: 5px;
+    }
+
+    .Places h2 {
+      color: black;
+      font-size: 25px;
+      letter-spacing: 1px;
+      border-radius: 12px;
+      padding: 0px;
+    }
+
+    .Places img {
+      width: 100%;
+      height: 300px;
+      border-radius: 12px;
+    }
+
+    .Places a {
+      text-decoration: none;
+      color: #ffff;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 12px;
+      padding: 12px 30px;
+      background-color: black;
+    }
+
+    .Places a:hover {
+      background-color: #87CEEB;
+      letter-spacing: 3px;
+      transition: 0.5s;
+    }
+  </style>
+
+</head>
+
+<body class="HomeBody">
+
+  <!-- header section start -->
+  <nav class="navbar navbar-expand-lg bg-light"
+    style="position: -webkit-sticky; position: sticky; width: 100%; top: 0; padding: 0px; z-index: 2;">
+    <div id="Menubar" class="container-fluid">
+      <a class="navbar-brand" href="./home.html">TONGA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="destinations.html">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="book.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+        <ul class="nav">
+          <li class="nav-item"><a href="./login.html" class="nav-link link-dark px-2">Login</a></li>
+          <li class="nav-item"><a href="./register.html" class="nav-link link-dark px-2">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- header section end -->
+
+  <section id="s1">
+
+    <div class="Banner">
+      <img src="./images/Places/Egypt/pyramids of giza_visit africa-pyramids of giza necropolis.jpg">
+    </div>
+    <div class="visit">
+      <h3>Visit The Great Pyramids of Giza</h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
+
+
+
+  <p class="intro">The Great Pyramid of Giza (also known as the Pyramid of Khufu or the Pyramid of Cheops) is the oldest
+    and largest of the three pyramids in the Giza pyramid complex bordering present-day Giza in Greater Cairo, Egypt. It
+    is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.
+
+    Based on a mark in an interior chamber naming the work gang and a reference to the Fourth Dynasty Egyptian pharaoh
+    Khufu, Egyptologists believe that the pyramid was built as a tomb over a 10- to 20-year period concluding around
+    2560 BC. Initially standing at 146.5 metres (481 feet), the Great Pyramid was the tallest man-made structure in the
+    world for more than 3,800 years until Lincoln Cathedral was finished in 1311 AD. It is estimated that the pyramid
+    weighs approximately 6 million tonnes, and consists of 2.3 million blocks of limestone and granite, some weighing as
+    much as 80 tonnes. Originally, the Great Pyramid was covered by limestone casing stones that formed a smooth outer
+    surface; what is seen today is the underlying core structure. Some of the casing stones that once covered the
+    structure can still be seen around the base. There have been varying scientific and alternative theories about the
+    Great Pyramid's construction techniques. Most accepted construction hypotheses are based on the idea that it was
+    built by moving huge stones from a quarry and dragging and lifting them into place.
+  </p>
+
+  <section>
+
+    <div id="about">
+
+      <h5>Overview</h5>
+
+      <p class="description">
+        Giza is a Governorate to the west of the Egyptian capital Cairo - a city in its own right, but for a long time
+        now absorbed as part of the heavily-populated and sprawling Cairo metropolis. Giza is best known as that part of
+        Cairo closest to the world-famous Pyramids of Giza, situated high on the desert plateau immediately to the west
+        of the urban district, itself located in the valley and centred around the Pyramids Road, linking central Cairo
+        with the ancient wonders. One of the premier attractions of Egypt, if not the world, the Pyramids of Giza
+        represent the archetypal pyramid structures of ancient Egyptian civilisation and - together with the Sphinx at
+        the base of the Giza plateau - are the iconic image of Egypt.
+
+
+      </p>
+
+      <h5>History of The Great Pyramids of Giza </h5>
+      <p class="description">
+        The three main Pyramids of Giza are the focal point of the Giza necropolis, or cemetery, that served the elite
+        of the Old Kingdom capital of Egypt at nearby Memphis during the mid to late 4th Dynasty (late 3rd millennium
+        BCE). Three pharaohs were buried here in turn - Khufu, Khafre and Menkaure - their astounding burials attracted
+        a number of surrounding, associated, burials of their queens, family members and nobility.
+        <br>
+        <br>
+        Egyptologists believe the pyramid was built as a tomb for the Fourth Dynasty Egyptian pharaoh Khufu (often
+        Hellenized as "Cheops") and was constructed over a 20-year period. Khufu's vizier, Hemiunu (also called Hemon),
+        is believed by some to be the architect of the Great Pyramid. It is thought that, at construction, the Great
+        Pyramid was originally 146.6 metres (481.0 ft) tall, but with the removal of its original casing, its present
+        height is 137 metres (449.5 ft). The lengths of the sides at the base are difficult to reconstruct, given the
+        absence of the casing, but recent analyses put them in a range between 230.26 metres (755.4 ft) and 230.44
+        metres (756.0 ft). The volume, including an internal hillock, is roughly 2,300,000 cubic metres (81,000,000 cu
+        ft).
+        <br>
+        <br>
+        The first precision measurements of the pyramid were made by Egyptologist Sir Flinders Petrie in 1880–82 and
+        published as The Pyramids and Temples of Gizeh. Almost all reports are based on his measurements. Many of the
+        casing-stones and inner chamber blocks of the Great Pyramid fit together with extremely high precision. Based on
+        measurements taken on the north-eastern casing stones, the mean opening of the joints is only 0.5 millimetres
+        (0.020 in) wide. The pyramid remained the tallest man-made structure in the world for over 3,800 years,
+        unsurpassed until the 160-metre-tall (520 ft) spire of Lincoln Cathedral was completed c. 1300.
+
+      </p>
+
+    </div>
+
+    <div id="about">
+
+      <h5>How to get there</h5>
+      <p class="description">
+      <ol>
+        <li>By Taxi: The Pyramids may be nearer than you think, so it's possible to take a taxi to the Pyramids from any
+          part of Cairo at a reasonable cost, and it's certainly the fastest and easiest method. There are several
+          options for this: private car or unmetered & metered taxis. You can also take Uber to the Pyramids. Use the
+          Careem application (Middle East version of Uber) for Android or iPhones to order a car and professional
+          driver. With real-time GPS tracking and credit card payment options for fixed rates, it is the cleanest,
+          safest, haggle-free way to get around in Cairo. This option is especially recommended for women solo
+          travellers
+        </li>
+        <br>
+        <li>By Public Transport: CTA bus From central Cairo, the optimum way to get to the Giza Pyramids using public
+          mass transit options is by bus routes 355 or 357 - a large white, air-conditioned coach with CTA (Cairo
+          Transport Authority) on the side. Travelling every 20 minutes from the airport and Heliopolis, the bus stops
+          (or doesn't - you may have to flag it down!) at the Abdel Menem Riyad Station in Midan Tahrir, next to the
+          Egyptian Museum, before continuing out to Giza and the Pyramids.
+        </li>
+        <br>
+        <li>By Subway/Metro: Metro Line 2 now runs from Cairo to Giza, although it doesn't go all the way to the
+          Pyramids. Get off at "Giza" station (not "El Giza"). Outside the metro station, a shared taxi can be hired:
+          look for old Volkswagen cars. A taxi to the pyramids will be less expensive if you take the white metered
+          taxis.
+        </li>
+        <br>
+      </ol>
+      </p>
+    </div>
+
+
+
+
+
+    <div id="about">
+
+      <h5>Attractions in Giza</h5>
+      <p class="description">
+      <ol>
+        <li>Great Pyramid of Giza/Khufu (Cheops) - the last surviving representative of the Seven Wonders of the Ancient
+          World, originally 146 m (479 ft) high but now slightly reduced to a still awe-inspiring 137 m (449 ft). Over
+          2 million blocks of stone were used to construct this edifice, all through organized manual labour.
+        </li>
+        <br>
+        <li>Solar Barque Museum - located immediately alongside the southern face of the Great Pyramid, an exceptionally
+          well-done museum showcasing an excavated and reconstructed "solar boat", buried along with the Pharaoh for
+          use on his daily journey with the sun across the sky.
+        </li>
+        <br>
+        <li>Pyramid of Khafre (Chephren) - slightly smaller than the Great Pyramid, though appearing from some angles to
+          appear larger owing to a better position on the desert plateau
+        </li>
+        <br>
+        <li>Pyramid of Menkaure (Mycerinus) - the smallest of the Giza Pyramids at 62 m (203 ft) high (originally 66.5m)
+        </li>
+        <br>
+        <li>Sphinx and the Temple of the Sphinx - the colossal, recumbent human-headed lion was conceived of by the
+          ancient Egyptians as the sun god Re-Horakhty - "Horus of the horizon". The Egyptians call it Abu el-Hol, the
+          "Father of Terror", and even the Greek name Sphinx is the less than pleasant "Strangler". 45 meters long, 22
+          meters wide, and carved from a single giant block of sandstone, the Sphinx is considerably smaller than the
+          Pyramids around it. The missing nose is blamed on target practice by bored troops, commonly blamed variously
+          on British soldiers in World War I or Napoleon's troops in 1798, but 18th-century drawings showing the nose
+          already missing, pointing the finger towards the occupying Turks. ( in fact the damage is recorded as having
+          occurred in about 1134 , as an iconoclastc act of a local religious leader )
+        </li>
+        <br>
+        <li>Various Queens' Pyramids and Nobles' Tombs, located in regimented cemeteries surrounding the royal pyramids.
+          Especially the Tomb of Seshemnufer IV which you can explore from the inside, where you can descend to the
+          sarcophagus and get an idea, how it looks. Since this is not the main object, there are few tourists and it
+          make this visit very interesting.
+        </li>
+        <br>
+      </ol>
+
+      </p>
+    </div>
+
+    <div>
+      <h5>Things to do in Abu Simbel</h5>
+      <p class="description">
+      <ul>
+        <li>Go on a classic camel ride. A camel ride around the Pyramids is pretty cliche, and many have found the
+          experience was not at all what they expected, but many are also thrilled by it.
+        </li> <br>
+
+        <li>Go horse riding in the desert to experience both the spirit of the Egyptian horses and the true majesty of
+          the Pyramids from outside the 'circus ring' wall. Be careful of touts, however; it's best to ride from a
+          reputable stable. Ride in the shadow of the Great Pyramids or even further afield on a half day trip to
+          <a href="#">Saqqara</a> or Abu Sir.
+        </li> <br>
+
+        <li>See the sunrise, the first sun beams colouring the Pyramids from the terrace on the third floor of a cafe or
+          from the roof terrace of the hostel situated near the second western entrance and ticket-office.
+        </li>
+      </ul>
+      </p>
+<br>  
+    </div>
+
+
+    <div id="about">
+      <h5>Where to Stay in Giza</h5>
+      <p class="description">
+      <p>General accommodation options are somewhat limited within the Giza district - most travellers tend to stay in
+        and
+        around central Cairo itself and travel out to the Pyramids for at least part of the day. Although Giza is an
+        option if you want a more laid back vibe and your fine with doing day-trips in to Cairo to see the sights. For
+        people determined to stay in close vicinity and / or for whom cost is no issue, although cheaper options are
+        springing up, there are a number of very comfortable options:
+      </p>
+      <ul>
+        <li>Pyramids Loft Homestay, 3 Yehia Gabry Street, Nezlet Semman, Giza, 12111 Cairo, Egypt (Next to Desert Storm
+          Stable, After Sound and Light Show Gate. This awesome hotel has a hostel-couchsurfing vibe with your own
+          private home-stay style rooms.Some rooms (by request) have pyramid views and the rooftop hangout is one of
+          the coolest on the planet with views of the Great Pyramids and the Spinx. Entrance to the pyramids is about
+          5 minutes walk form the hotel. Many cheap restaurants in the neighborhood and delivery.
+
+        </li>
+        <br>
+        <li>Pyramids View Inn, 10 Sphinx St. Sound and Light Plaza, Giza, This bed and breakfast was the owners
+          childhood home and converted into a hostel after the revolution. It boasts a friendly staff who help
+          travelers new to the region with everything from assistance in local shopping (including price negotiations
+          with locals) to organizing tours to the pyramids and other locations. It is a very international friendly
+          environment, with English, German and Spanish all spoken by the staff. There is free wifi and magic jack
+          (which permits free international calls) services
+        </li>
+        <br>
+
+        <li>Mena House (formerly Oberoi), El Haram Street, Built in 1869 as a royal lodge for King Ismail the
+          Magnificent, this magnificent palace has housed guests including Empress Eugenie and Prince Albert.
+          Tastefully restored and located very close to the Pyramids.
+        </li><br>
+
+        <li>Le Méridien Pyramids Hotel & Spa, El Remaya Square. (across the street from the Giza Pyramids complex),
+          Nonsmoking rooms and rooms modified for disabled guests are also available & most enjoy excellent views of
+          the Giza pyramids
+        </li>
+
+        <br>
+      </ul>
+      </p>
+    </div>
+
+
+    </div>
+
+
+
+    <div id="about">
+      <img src="./images/Places/Egypt/pyramids of giza_visit africa-pyramids of giza necropolis.jpg" alt="">
+      
+        </div>
+  
+    <div id="about">
+  
+      <div class="row">
+  
+        <div class="col">
+          <img src="./images/Places/Egypt/visit egypt-visitafrica (3).jpg">
+        </div>
+  
+        <div class="col">
+          <img src="./images/Places/Egypt/visit egypt-visitafrica (25).jpg">
+        </div>
+  
+      </div>
+  
+    </div>
+  
+    <br>
+  
+    <div id="about">
+  <img src="./images/Places/Egypt/pyramids of giza_visit africa-pyramids of giza complex at night.jpg" alt="">
+  
+    </div>
+  
+
+
+  </section>
+
+
+  
+
+
+
+  <!-- end of body contain -->
+
+  <!-- footer session start  -->
+  <section class="footer" style="background: url(./images/footer-bg.jpg) no-repeat;">
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Extra links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+        <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +880 1612618109</a>
+        <a href="#"><i class="fas fa-envelope"></i> Idrissa@iut-dhaka.edu</a>
+        <a href="#"><i class="fas fa-envelope"></i> shalayuy@iut-dhaka.edu</a>
+        <a href="#"><i class="fas fa-map"></i> Dhaka, Bangladesh</a>
+      </div>
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+        <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+      </div>
+    </div>
+    <div class="credit">
+      created by <span>Idrissa & Nabil</span> | All right reversed!
+    </div>
+
+  </section>
+  <!-- footer session end -->
+  <!-- swiper js link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- custom js file js -->
+  <script src="./js/script.js"></script>
+  <!-- script for bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteration: false,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+    });
+  </script>
+
+</body>
+
+</html>

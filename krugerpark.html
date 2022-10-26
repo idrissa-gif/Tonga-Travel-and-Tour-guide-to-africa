@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Home</title>
+    <!-- bootstrap css link -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/giza.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+    <style>
+        #Menubar {
+            width: 100%;
+            background: #FCD19C;
+        }
+
+        .container-fluid {
+            width: 100%;
+            height: 100%;
+            padding: 0%;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+
+        .swiper-slide {
+            position: relative
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+        .swiper-slide figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0
+        }
+
+
+
+
+        .form-control-dark {
+            border-color: var(--bs-gray);
+        }
+
+        .form-control-dark:focus {
+            border-color: #fff;
+            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+        }
+
+        .text-small {
+            font-size: 85%;
+        }
+
+        .dropdown-toggle {
+            outline: 0;
+        }
+
+
+        .featured-Places-Head {
+            position: sticky;
+            background: #87CEEB;
+        }
+
+        .FeaturedPlaces {
+
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .Places {
+            width: 500px;
+            display: inline;
+            text-align: center;
+            border-radius: 12px;
+            background-color: #FFC0CB;
+            margin: 5px;
+        }
+
+        .Places h2 {
+            color: black;
+            font-size: 25px;
+            letter-spacing: 1px;
+            border-radius: 12px;
+            padding: 0px;
+        }
+
+        .Places img {
+            width: 100%;
+            height: 300px;
+            border-radius: 12px;
+        }
+
+        .Places a {
+            text-decoration: none;
+            color: #ffff;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 12px;
+            padding: 12px 30px;
+            background-color: black;
+        }
+
+        .Places a:hover {
+            background-color: #87CEEB;
+            letter-spacing: 3px;
+            transition: 0.5s;
+        }
+    </style>
+
+</head>
+
+<body class="HomeBody">
+
+    <!-- header section start -->
+    <nav class="navbar navbar-expand-lg bg-light"
+        style="position: -webkit-sticky; position: sticky; width: 100%; top: 0; padding: 0px; z-index: 2;">
+        <div id="Menubar" class="container-fluid">
+            <a class="navbar-brand" href="./home.html">TONGA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="book.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+                    </li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+                <ul class="nav">
+                    <li class="nav-item"><a href="./login.html" class="nav-link link-dark px-2">Login</a></li>
+                    <li class="nav-item"><a href="./register.html" class="nav-link link-dark px-2">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header section end -->
+
+    <section id="s1">
+
+        <div class="Banner">
+            <img src="./images/SA/inyati-game-lodge-game-drive-cheetah-786x416.jpg">
+        </div>
+        <div class="visitKruger">
+            <h3>
+                <center>Visit Kruger Park</center>
+            </h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+
+
+    <p class="intro">Kruger National Park is South Africa's most exciting, iconic and one of the largest African tour
+        destination. Visit Kruger National Park in Africa to explore its legend and historical landscapes and
+        spectacular African wildlife. The Kruger National Park covers nearly two million hectares of land and is one of
+        the must-visit destinations in South Africa.
+
+
+        The huge conservation area is home to a plethora of animals and is actually the best place in Africa to see
+        large animals. As well as the big five, there are over 150 other large animals such as zebras and antelopes that
+        roam its plains and visitors are guaranteed an unforgettable experience with such a diverse range of beautiful
+        animals on show. Kruger National Park is incontestably the pride and joy of South Africa’s national parks and
+        rightly so: the unbelievable natural beauty and breathtaking wildlife on display are almost without match on the
+        continent
+
+
+    </p>
+
+
+    <div id="Bodysection">
+        <div id="about">
+
+            <h5>Overview</h5>
+
+            <p class="description">
+                Kruger National Park is a South African National Park and one of the largest game reserves in Africa. It
+                covers an area of 19,485 km2 (7,523 sq mi) in the provinces of Limpopo and Mpumalanga in northeastern
+                South Africa, and extends 360 km (220 mi) from north to south and 65 km (40 mi) from east to west. The
+                administrative headquarters are in Skukuza. Areas of the park were first protected by the government of
+                the South African Republic in 1898, and it became South Africa's first national park in 1926.
+
+
+                <br>
+                <br>
+                To the west and south of the Kruger National Park are the two South African provinces of Limpopo and
+                Mpumalanga, respectively. To the north is Zimbabwe, and to the east is Mozambique. It is now part of the
+                Great Limpopo Transfrontier Park, a peace park that links Kruger National Park with the Gonarezhou
+                National Park in Zimbabwe, and with the Limpopo National Park in Mozambique.
+
+
+                <br>
+                <br>
+                The park is part of the Kruger to Canyons Biosphere, an area designated by the United Nations
+                Educational, Scientific and Cultural Organization (UNESCO) as an International Man and Biosphere Reserve
+
+
+            <h5>Climate</h5>
+            <p>The climate of the Kruger National Park and Lowveld is subtropical. Summer days are humid and hot. The
+                rainy season is from September until May. The Kruger National Park website lists September and October
+                as the driest periods, culminating in rains late in October. Because the park is 360 km from North to
+                South, climate can vary throughout the park. Skukuza in the southern part of the park is about 2-3
+                degrees cooler throughout the year than Pafuri in the north, with significantly more precipitation.
+
+            </p>
+
+            <h5>How to get there </h5>
+            <p class="description">
+                Many visitors to Kruger are self-drive visitors. At the same time however many people (particularly
+                internationals) chose to fly to the park’s periphery and then hire a vehicle.
+
+                <br><br>
+                <b>By Air:</b> There are daily flights to the Kruger Park operating from Johannesburg to the recently
+                reopened Skukuza Airport, Phalaborwa Airport, Hoedspruit Airport and the Kruger/Mpumalanga International
+                Airport (KMIA) located between Nelspruit and White River. Daily flights also operate to Skukuza from
+                Cape Town. KMIA also receives daily flights from Durban and Cape Town, and there is also a flight from
+                Cape Town to Hoedspruit.
+                <br><br>
+                <b>By Coach:</b> A number of coach tours are available of varying degrees of luxury. Transport
+                companies, often in conjunction with tour operators/travel agents
+
+                <br><br>
+                <b>By Coach:</b> A number of coach tours are available of varying degrees of luxury. Transport
+                companies, often in conjunction with tour operators/travel agents
+
+            <h5>Entrance Points (Gates): </h5>
+            There are nine entrance gates to Kruger, namely (anti-clockwise from the north):
+
+            <ul>
+                <li>Pafuri
+                </li>
+                <li>Punda Maria</li>
+                <li>Phalaborwa</li>
+                <li>Orpen</li>
+                <li>Paul Kruger
+                </li>
+                <li>Phabeni
+                </li>
+                <li>Numbi</li>
+                <li>Malelane</li>
+                <li>Crocodile Bridge</li>
+            </ul>
+            </p>
+
+
+
+        </div>
+
+        <div id="about">
+
+
+
+            <div id="about">
+
+                <h5>Attractions & Activities: Kruger National Park
+                </h5>
+
+                <p class="description">
+                <h5>Murchison Falls</h5>
+                <p class="description">
+                    The world-renowned Kruger National Park offers a wildlife experience that ranks with the best in
+                    Africa. Kruger national park is home to an impressive number of species: 336 trees, 49 fish, 34
+                    amphibians, 114 reptiles, 507 birds and 147 mammals. Man's interaction with the lowveld environment
+                    over many centuries - from bushman rock paintings to majestic archaeological sites like Masorini and
+                    Thulamela - is very evident in the Kruger National Park.
+                    <br><br>
+                    Sighting the "Big Five" has become something of a quest for many people when on safari, and the
+                    Kruger National Park has more than its fair share of these, with an estimated 1,500 lion, 17,000
+                    elephant, 48,000 buffalo and 1,000 leopards. It should certainly not be a pre-requisite of a safari
+                    to see these or even a priority, as there are plenty of other fascinating animals and birds in the
+                    African bush.
+
+                    s
+                </p>
+
+                <p class="description">
+                <h5>Activities: </h5>
+                <p class="description">
+                <ul>
+                    <li>Game Drive</li>
+                    <li>Guided Walks</li>
+                    <li>Mountain Biking</li>
+                    <li>Birding</li>
+                    <li>Golf</li>
+                    <li>Eco-Trail Activities</li>
+                    <li>Backpacking Trails</li>
+                    <li>Wilderness Trails</li>
+                </ul>
+                </p>
+
+                <p class="description">
+                <h5>Great Limpopo Park Transfrontier Trails:
+                </h5>
+                <p class="description">
+                    Parque Nacional do Limpopo is truly the perfect setting for an adventure without boundaries.
+                    Together, Moçambique’s Parque Nacional do Limpopo, South Africa’s Kruger National Park and
+                    Zimbabwe’s Gonarezhou National Park form the Great Limpopo Transfrontier Park, covering a total of
+                    3.3 million hectares - one of the largest wilderness conservation areas in the world.
+
+                </p>
+
+                <p class="description">
+                <h5>Where to stay: Kruger National Park </h5>
+                <p class="description">
+                    Kruger national park offers world class tour accommodation. You can choose to stay in a number of
+                    different accommodation units in a number of different camps.
+
+
+                </p>
+
+                <p class="description">
+                <h5>Basic Accommodation Types:
+
+                </h5>
+                <p class="description">
+                <ul>
+                    <li><b>Camping: </b> Sites for caravans or tents – most have power (except Balule and some at Punda
+                        Maria). Sites at lower Sabie have designated boundaries and own water taps.</li><br>
+                    <li><b>Hut: </b>Single room units with communal kitchen and communal ablution facilities.
+                    </li><br>
+                    <li><b>Safari Tent: </b> Permanent canvas tent bedrooms on permanent platforms. Some have communal
+                        kitchen and communal ablution facilities, while others are fully equipped and have more
+                        luxurious trimmings.</li><br>
+                    <li><b>Bungalow: </b>Single bedroom units with a bathroom. Some have communal kitchens while others
+                        have own kitchenettes with basic kitchen equipment. Some bungalows have perimeter or river
+                        views, while others have been upgraded to luxury status.</li><br>
+                    <li><b>Cottage: </b>Single bedroom units with living room, bathroom and kitchen.</li><br>
+                    <li><b>Family Cottage: </b>Multiple bedroom units with a living room, bathroom and kitchen.</li><br>
+                    <li><b>Guest Cottage: </b>Multiple bedroom units with at least 2 bathrooms of which one is en-suite.
+                        Fully equipped kitchen.</li><br>
+                    <li><b>Guest House: </b>Multiple bedroom and bathroom units with lounge area and often with bar
+                        facility and exclusive view.</li><br>
+                    <li><b>Luxury Lodges: </b>These exclusive private lodges, with a unique style and atmosphere form
+                        part
+                        of a suite of products known as SANParks "Golden Kudus", where luxury is the order of the day.
+                    </li>
+                </ul>
+
+                </p>
+
+            </div>
+
+
+
+
+            <div id="about">
+
+                <div class="row">
+
+                    <div class="col">
+                        <img src="./images/SA/c1e193b7ebed2d3725e2c13507b99bc82aefd7d1-1600x1065.jpg">
+                    </div>
+
+                    <div class="col">
+                        <img src="./images/SA/juanma-clemente-alloza-AdQUarIJM00-unsplash.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id="about">
+
+                <div class="row">
+
+                    <div class="col">
+                        <img src="./images/SA/nkorho-bush-lodge-game-drive-cheetah-786x416.jpg">
+                    </div>
+
+                    <div class="col">
+                        <img src="./images/SA/joss-woodhead-GxX2zBrMU3c-unsplash.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- end of body contain -->
+
+        <!-- footer session start  -->
+        <section class="footer" style="background: url(./images/footer-bg.jpg) no-repeat;">
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Extra links</h3>
+                    <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
+                </div>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"><i class="fas fa-phone"></i> +880 1612618109</a>
+                    <a href="#"><i class="fas fa-envelope"></i> Idrissa@iut-dhaka.edu</a>
+                    <a href="#"><i class="fas fa-envelope"></i> shalayuy@iut-dhaka.edu</a>
+                    <a href="#"><i class="fas fa-map"></i> Dhaka, Bangladesh</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+                    <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                </div>
+            </div>
+            <div class="credit">
+                created by <span>Idrissa & Nabil</span> | All right reversed!
+            </div>
+
+        </section>
+        <!-- footer session end -->
+        <!-- swiper js link -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!-- custom js file js -->
+        <script src="./js/script.js"></script>
+        <!-- script for bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteration: false,
+                },
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                // scrollbar: {
+                //   el: '.swiper-scrollbar',
+                // },
+            });
+        </script>
+
+</body>
+
+</html>

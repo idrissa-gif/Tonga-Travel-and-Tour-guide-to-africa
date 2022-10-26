@@ -1,3 +1,7 @@
+*{
+  text-transform: none;
+
+}
 
 .HomeBody{
   max-width:100%;

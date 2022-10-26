@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Home</title>
+    <!-- bootstrap css link -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/giza.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+    <style>
+        #Menubar {
+            width: 100%;
+            background: #FCD19C;
+        }
+
+        .container-fluid {
+            width: 100%;
+            height: 100%;
+            padding: 0%;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+
+        .swiper-slide {
+            position: relative
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+        .swiper-slide figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0
+        }
+
+
+
+
+        .form-control-dark {
+            border-color: var(--bs-gray);
+        }
+
+        .form-control-dark:focus {
+            border-color: #fff;
+            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+        }
+
+        .text-small {
+            font-size: 85%;
+        }
+
+        .dropdown-toggle {
+            outline: 0;
+        }
+
+
+        .featured-Places-Head {
+            position: sticky;
+            background: #87CEEB;
+        }
+
+        .FeaturedPlaces {
+
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .Places {
+            width: 500px;
+            display: inline;
+            text-align: center;
+            border-radius: 12px;
+            background-color: #FFC0CB;
+            margin: 5px;
+        }
+
+        .Places h2 {
+            color: black;
+            font-size: 25px;
+            letter-spacing: 1px;
+            border-radius: 12px;
+            padding: 0px;
+        }
+
+        .Places img {
+            width: 100%;
+            height: 300px;
+            border-radius: 12px;
+        }
+
+        .Places a {
+            text-decoration: none;
+            color: #ffff;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 12px;
+            padding: 12px 30px;
+            background-color: black;
+        }
+
+        .Places a:hover {
+            background-color: #87CEEB;
+            letter-spacing: 3px;
+            transition: 0.5s;
+        }
+    </style>
+
+</head>
+
+<body class="HomeBody">
+
+    <!-- header section start -->
+    <nav class="navbar navbar-expand-lg bg-light"
+        style="position: -webkit-sticky; position: sticky; width: 100%; top: 0; padding: 0px; z-index: 2;">
+        <div id="Menubar" class="container-fluid">
+            <a class="navbar-brand" href="./home.html">TONGA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="book.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+                    </li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+                <ul class="nav">
+                    <li class="nav-item"><a href="./login.html" class="nav-link link-dark px-2">Login</a></li>
+                    <li class="nav-item"><a href="./register.html" class="nav-link link-dark px-2">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header section end -->
+
+    <section id="s1">
+
+        <div class="Banner">
+            <img src="./images/Uganda/download.jpg">
+        </div>
+        <div class="visit">
+            <h3>Murchison Falls National Park </h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+
+
+    <p class="intro">Murchison Falls National Park is Uganda's biggest park pride of a complete tour experience, from
+        falls, Wildlife game drive, breathtaking sceneries, world-class lodges, thrilling cultural experience, birding,
+        air-balloon experience.
+
+
+        The park is bisected by the Victoria Nile, which plunges 45m over the remnant rift valley wall, creating the
+        dramatic Murchison Falls, the centerpiece of the park and the final event in an 80km stretch of rapids. The
+        mighty cascade drains the last of the river's energy, transforming it into a broad, placid stream that flows
+        quietly across the rift valley floor into Lake Albert. This stretch of river provides one of Uganda's most
+        remarkable wildlife spectacles. Regular visitors to the riverbanks include elephants, giraffes and buffaloes;
+        while hippos, Nile crocodiles and aquatic birds are permanent residents
+    </p>
+
+    
+<div id="Bodysection">
+        <div id="about">
+
+            <h5>Overview</h5>
+
+            <p class="description">
+                Murchison Falls National Park is Uganda's largest national park. It measures approximately 3,893 square
+                kilometres (1,503 sq mi). The park is bisected by the Victoria Nile from east to west for a distance of
+                about 115 kilometres (71 mi). The park is the location of the Murchison Falls, where the waters of the
+                Nile flow through a narrow gorge only 7 metres (23 ft) wide before plunging 43 metres (141 ft). Also in
+                the park, adjacent to the Masindi-Gulu Highway, are the Karuma Falls, the location of the 600 megawatt
+                Karuma Power Station, which will be Uganda's largest power station when it comes online circa 2018.
+                <br>
+                <br>
+                Murchison Falls National Park lies at the northern end of the Albertine Rift Valley, where the sweeping
+                Bunyoro escarpment tumbles into vast, palm-dotted Savannah. First gazetted as a game reserve in 1926, it
+                is Uganda's largest and oldest conservation area, hosting 76 species of mammals and 451 birds.
+                <br>
+                <br>
+                Murchison Falls national park straddles the Ugandan districts of Buliisa, Nwoya, Kiryandongo, and
+                Masindi. The driving distance from Masindi, the nearest large town, to the Kibanda area of the national
+                park is about 72 kilometres (45 mi). This area is about 283 kilometres (176 mi), by road, north-west of
+                Kampala, the capital and largest city of Uganda. The coordinates of the park near the Kibanda area are
+                02°11'15.0"N, 31°46'53.0"E (Latitude:2.187499; Longitude:31.781400).
+
+
+
+
+            </p>
+
+            <h5>History of Murchison Falls National Park </h5>
+            <p class="description">
+                The explorers John Speke and James Grant were the first Europeans to visit the present day Murchison
+                Falls National Park in 1862. It was more thoroughly explored by Samuel and Florence Baker in 1863-4.
+                Baker named the falls Murchison Falls after the geologist Roderick Murchison, then the president of the
+                Royal Geographical Society.
+                <br>
+                <br>
+                Between 1907 and 1912, the inhabitants of an area of about 13,000 square kilometres (5,000 sq mi) were
+                evacuated due to sleeping sickness spread by tse-tse flies. In 1910, the Bunyoro Game Reserve was
+                created south of the River Nile. That area roughly corresponds to the part of the Murchison Falls
+                National Park that is in the districts of Buliisa, Masindi, and Kiryandongo. In 1928, the boundaries
+                were extended north of the river into the modern-day Nwoya District. In 1952, the British administration
+                established the National Parks Act of Uganda. The area described above became Murchison Falls National
+                Park.
+
+            </p>
+
+        </div>
+
+        <div id="about">
+
+
+
+            <div id="about">
+
+                <h5>Attractions in Murchison Falls</h5>
+
+                <p class="description">
+                <h5>Murchison Falls</h5>
+                <p class="description">
+                    Murchison Falls is characterized by eternal war between rock and water. The waters violently
+                    compress through a narrow gorge, spraying misty droplets along their wake over a 50m radius. This
+                    creates a permanent rainbow over the battlefield and causes a continuous roar. From Baker Point on
+                    the southern side, you can also view the Nile splitting into the smaller Uhuru Falls, created in
+                    1962 when the river burst its banks.
+
+
+                </p>
+
+                <p class="description">
+                <h5>River Nile</h5>
+                <p class="description">
+                    A boat ride along the Nile to the foot of Murchison Falls is a rewarding experience for nature
+                    lovers, as the northern bank teems with a variety of mammals, birds and reptiles. Guided nature
+                    walks along both the north and south banks are another refreshing activity, and sport fishing is
+                    also possible here. Rafting will be available starting in 2012.
+
+
+                </p>
+
+                <p class="description">
+                <h5>Buligi Game Tracks</h5>
+                <p class="description">
+                    The Buligi game tracks, stretching between the Victoria and Albert Niles, are the Murchison Falls
+                    National Park’s most popular safari destination. At around 120-170km in length, they pass through
+                    open Savannah grassland, woodland, acacia and riverine vegetation. Most of the park’s game can be
+                    viewed here, especially during early morning and early evening tours.
+
+                </p>
+
+                <p class="description">
+                <h5>Karuma Falls</h5>
+                <p class="description">
+                    The Karuma Falls are located in Chobe, in the northeastern sector of the park. These roaring
+                    waterfalls on the Victoria Nile are made up of a series of natural rock formations which cause the
+                    waters to ripple and give them a white, foamy appearance. It is an ideal area for sport fishing.
+
+                </p>
+
+                <p class="description">
+                <h5>Rabongo Forests</h5>
+                <p class="description">
+                    Surrounded by Savannah and covering just 4km2, Rabongo Forest is considered a birders’ paradise
+                    because of the endangered species found here. Rabongo is ideal for educational tours as it provides
+                    opportunities to identify animals, birds, medicinal plants and trees. For relaxation, visitors can
+                    camp and enjoy picnics by the Wairingo River.
+                </p>
+
+                <p class="description">
+                <h5>Paraa</h5>
+                <p class="description">
+                    "Paraa", meaning home of the hippo in the local Luo language, is the park’s tourism hub. All the
+                    park’s access roads converge here as the northern and southern banks are linked by a passenger
+                    ferry, and several accommodations are located nearby. Additionally, a museum and gift shop can be
+                    found on the north bank, and most game drives, launch trips and nature walks commence here.
+                </p>
+
+                <p class="description">
+                <h5>Kaniyo Pabidi Forest</h5>
+                <p class="description">
+                    In the south of Murchison Falls Conservation Area, this forest ecosystem contains black-and-white
+                    colobus and blue monkeys, olive baboons, and a habituated chimp group which can be tracked.
+                    Elephants, buffalos, lions and leopards are also frequent visitors. Many forest birds can be viewed
+                    here, including the chocolate-backed kingfisher, white-thighed hornbill and Puvel's illadopsis which
+                    is found nowhere else in East Africa.
+                </p>
+
+            </div>
+            <div id="about">
+
+                <h5>Wildife and Activities</h5>
+
+                <p class="description">
+                <h5>Big Game</h5>
+                <p class="description">
+                    The park is home to 76 species of mammals including four of the “Big Five”, with huge herds of
+                    buffaloes and elephants, well-camouflaged leopards and a healthy population of lions. It is also
+                    known for its giraffes; in Uganda these can only be viewed here and in Kidepo Valley. Other species
+                    viewed regularly along the game tracks include Jackson’s hartebeest, bushbucks, Uganda kob,
+                    waterbucks and warthogs. Resident crocodiles and hippos as well as other, visiting wildlife are
+                    found along the river.
+
+                </p>
+
+                <p class="description">
+                <h5>Primates</h5>
+                <p class="description">
+                    Olive baboons are common along the roadsides – be sure to keep car windows and doors shut if you
+                    don’t want to lose your lunch! Blue and red-tailed monkeys and black-and-white colobus can be found
+                    in the forested sectors. The Savannah-dwelling patas monkey is only found here and in Kidepo Valley
+                    National Park. Around 800 chimpanzees live in the Kaniyo Pabidi and Budongo Forests.
+                </p>
+
+                <p class="description">
+                <h5>Birding</h5>
+                <p class="description">
+                    The varied habitats of Uganda’s largest park make it home to a variety of birds with 451 species
+                    recorded. The list includes the Shoebill Stork, the Goliath Heron – the largest heron in the world –
+                    and pairs of elegant Grey Crowned Cranes - Uganda’s national bird. Also seen along the banks of the
+                    Nile are the Blue-headed Coucal, Swamp Flycatcher, Squacco Heron, African Jacana, Sandpipers,
+                    Denham’s Bustard, Abyssinian Ground-Hornbill, Black-billed Barbet, Black-headed Gonolek, Eastern
+                    Grey Plantain-eater, Piapiac, Silverbird, Weaver Birds, Pied, Giant and Malachite Kingfishers,
+                    Red-throated Bee-eater, White-browed Sparrow Weaver, Speckle-fronted Weaver and African Quail-Finch.
+                </p>
+
+                <p class="description">
+                <h5>Activities in Murchison Falls National Park</h5>
+                <p class="description">
+                <ul>
+                    <li>Game Drive</li>
+                    <li>Boat Cruise</li>
+                    <li>Cultural Walks</li>
+                    <li>Sport Fishing</li>
+                    <li>Birding</li>
+                    <li>Hot Air Balloon Experience</li>
+                </ul>
+                </p>
+
+
+            </div>
+
+
+            <div id="about">
+                <h5>Where to Stay in Giza</h5>
+                <p class="description">
+                <p>General accommodation options are somewhat limited within the Giza district - most travellers tend to
+                    stay in
+                    and
+                    around central Cairo itself and travel out to the Pyramids for at least part of the day. Although
+                    Giza is an
+                    option if you want a more laid back vibe and your fine with doing day-trips in to Cairo to see the
+                    sights. For
+                    people determined to stay in close vicinity and / or for whom cost is no issue, although cheaper
+                    options are
+                    springing up, there are a number of very comfortable options:
+                </p>
+                <ul>
+                    <li>Pyramids Loft Homestay, 3 Yehia Gabry Street, Nezlet Semman, Giza, 12111 Cairo, Egypt (Next to
+                        Desert Storm
+                        Stable, After Sound and Light Show Gate. This awesome hotel has a hostel-couchsurfing vibe with
+                        your own
+                        private home-stay style rooms.Some rooms (by request) have pyramid views and the rooftop hangout
+                        is one of
+                        the coolest on the planet with views of the Great Pyramids and the Spinx. Entrance to the
+                        pyramids is about
+                        5 minutes walk form the hotel. Many cheap restaurants in the neighborhood and delivery.
+
+                    </li>
+                    <br>
+                    <li>Pyramids View Inn, 10 Sphinx St. Sound and Light Plaza, Giza, This bed and breakfast was the
+                        owners
+                        childhood home and converted into a hostel after the revolution. It boasts a friendly staff who
+                        help
+                        travelers new to the region with everything from assistance in local shopping (including price
+                        negotiations
+                        with locals) to organizing tours to the pyramids and other locations. It is a very international
+                        friendly
+                        environment, with English, German and Spanish all spoken by the staff. There is free wifi and
+                        magic jack
+                        (which permits free international calls) services
+                    </li>
+                    <br>
+
+                    <li>Mena House (formerly Oberoi), El Haram Street, Built in 1869 as a royal lodge for King Ismail
+                        the
+                        Magnificent, this magnificent palace has housed guests including Empress Eugenie and Prince
+                        Albert.
+                        Tastefully restored and located very close to the Pyramids.
+                    </li><br>
+
+                    <li>Le Méridien Pyramids Hotel & Spa, El Remaya Square. (across the street from the Giza Pyramids
+                        complex),
+                        Nonsmoking rooms and rooms modified for disabled guests are also available & most enjoy
+                        excellent views of
+                        the Giza pyramids
+                    </li>
+
+                    <br>
+                </ul>
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div id="about">
+
+            <div class="row">
+
+                <div class="col">
+                    <img src="./images/Uganda/Murchison Falls and Ziwa Rhino Sanctuary.jpg">
+                </div>
+
+                <div class="col">
+                    <img src="./images/Uganda/Murchison Falls and Rhino sanctuary2.jpg">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="about">
+
+            <div class="row">
+
+                <div class="col">
+                    <img src="./images/Uganda/Murchison Falls and Rhino sanctuary4.jpg">
+                </div>
+
+                <div class="col">
+                    <img src="./images/Uganda/lake-victoria.jpg">
+                </div>
+
+            </div>
+
+        </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- end of body contain -->
+
+    <!-- footer session start  -->
+    <section class="footer" style="background: url(./images/footer-bg.jpg) no-repeat;">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+                <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +880 1612618109</a>
+                <a href="#"><i class="fas fa-envelope"></i> Idrissa@iut-dhaka.edu</a>
+                <a href="#"><i class="fas fa-envelope"></i> shalayuy@iut-dhaka.edu</a>
+                <a href="#"><i class="fas fa-map"></i> Dhaka, Bangladesh</a>
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+            </div>
+        </div>
+        <div class="credit">
+            created by <span>Idrissa & Nabil</span> | All right reversed!
+        </div>
+
+    </section>
+    <!-- footer session end -->
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js file js -->
+    <script src="./js/script.js"></script>
+    <!-- script for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteration: false,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //   el: '.swiper-scrollbar',
+            // },
+        });
+    </script>
+
+</body>
+
+</html>
