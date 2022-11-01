@@ -1,72 +1,68 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Book a Trip</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
-    <!-- MDB -->
-    <link rel="stylesheet" href="./css/mdb.min.css"/>
-    <!-- customize  -->
-    <link rel="stylesheet" href="./css/sign_up.css">
-    <style>
-      body{
-        
-        background: url(./images/Book_backgroundimg.png);
-        background-repeat: no-repeat; 
-        background-size: 100% 100vh;   
-      }
-      .navbar-brand, .nav-link
-      {
-        color: black;
-      }
-      .text-center,form
-      {
-        color:white;
-      }
 
-      .container-fluid
-      {
-        background-color: #FCD19C;
-      }
-      .navbar{
-        position: -webkit-sticky; 
-        position: sticky;  
-        top: 0;
-        z-index: 2;
-      }
-      .login-signup
-      {
-        padding-top: 5%;
-        margin: 0% 20%;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Book a Trip</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="./css/mdb.min.css" />
+  <!-- customize  -->
+  <link rel="stylesheet" href="./css/sign_up.css">
+  <style>
+    body {
 
-      }
-    </style>
+      background: url(./images/Book_backgroundimg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 150vh;
+    }
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    .navbar-brand,
+    .nav-link {
+      color: black;
+    }
+
+    .text-center,
+    form {
+      color: white;
+    }
+
+    .container-fluid {
+      background-color: #FCD19C;
+    }
+
+    .navbar {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    .login-signup {
+      padding-top: 5%;
+      margin: 0% 20%;
+
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <!-- header section start -->
+  <!-- header section start -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="./home.html">TONGA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -88,57 +84,94 @@
     </div>
   </nav>
   <!-- header section end -->
-<div>
-  <!-- Start your project here-->
-  <div class="login-signup">
-     
-    <div class="tab-content">
-    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-      <form method="POST" action="sign.php" id="login">
+  <div>
+    <!-- Start your project here-->
+    <div class="login-signup">
 
-        <!-- FullName input -->
-        <div class="form-outline mb-4" metho>
-          <input type="text" id="loginName" class="form-control" name = "FullName" style="background-color: white; color:black" required/>
-          <label class="form-label" for="loginName">FullName</label>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+          <form method="POST" action="./booking.php" id="login">
+
+            <!-- destionation input -->
+            <div class="form-outline mb-4" metho>
+              <input type="text" id="destination" class="form-control" name="destination"
+                style="background-color: white; color:black" required />
+              <label class="form-label" for="destination">Destination</label>
+            </div>
+
+            <!-- FullName input -->
+            <div class="form-outline mb-4" metho>
+              <input type="text" id="loginName" class="form-control" name="FullName"
+                style="background-color: white; color:black" required />
+              <label class="form-label" for="loginName">FullName</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4" metho>
+              <input type="email" id="email" class="form-control" name="email"
+                style="background-color: white; color:black" required />
+              <label class="form-label" for="email">Email</label>
+            </div>
+
+            <!-- Phone input -->
+            <div class="form-outline mb-4" metho>
+              <input type="text" id="Phone" class="form-control" name="Phone"
+                style="background-color: white; color:black" required />
+              <label class="form-label" for="Phone">Phone</label>
+            </div>
+
+            <!-- Adults input -->
+            <div class="form-outline mb-4" metho>
+              <input type="number" id="adults" class="form-control" name="adults"
+                style="background-color: white; color:black" required />
+              <label class="form-label" for="adults">Adults</label>
+            </div>
+
+            <!-- Children input -->
+            <div class="form-outline mb-4" metho>
+              <input type="number" id="children" class="form-control" name="children"
+                style="background-color: white; color:black" required />
+              <label class="form-label" for="children">Children</label>
+            </div>
+             <!-- Start date input -->
+             <div class="form-outline mb-4" style="background-color: white;"metho>
+              <input id="datetime" type="date" class="form-control" name="book_date" id="book_date"  style="background-color: white; color:black" required>
+              <label class="form-label" for="date">Start date</label>
+            </div>
+            
+            
+            <!-- Quote Message -->
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="8" colums="4" name="message" tabindex="4"
+                placeholder="Write your message"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4" name="submit"
+              style="background-color: green;">Book Trip</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p style="color: white;">Not a member? <a href="register.html">Register</a></p>
+            </div>
+          </form>
         </div>
 
-        <!-- Email input -->
-        <div class="form-outline mb-4" metho>
-          <input type="email" id="loginName" class="form-control" name = "email" style="background-color: white; color:black" required/>
-          <label class="form-label" for="loginName">Email</label>
-        </div>
-
-        <!-- Phone input -->
-        <div class="form-outline mb-4" metho>
-          <input type="text" id="loginName" class="form-control" name = "Phone" style="background-color: white; color:black" required/>
-          <label class="form-label" for="loginName">Phone</label>
-        </div>
-        
-        <!-- Quote Message -->
-        <div class="mb-3">
-          <textarea class="form-control" id="message" rows="15" colums="4" 
-          name="message" tabindex = "4" placeholder="Write your message" ></textarea>
-        </div>
-
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4" name="submit" style="background-color: green;">Book Trip</button>
-      
-        <!-- Register buttons -->
-        <div class="text-center">
-          <p style="color: white;">Not a member? <a href="register.html">Register</a></p>
-        </div>
-      </form>
+      </div>
+      <!-- Pills content -->
+      <!-- End your project here-->
     </div>
 
-  </div>
-  <!-- Pills content -->
-  <!-- End your project here-->
-</div>
-  
+
+
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+    <script>
+      document.getElementById('destination').value=sessionStorage.getItem('destination');
+    </script>
 
-  </body>
+</body>
+
 </html>
